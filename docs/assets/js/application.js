@@ -13,9 +13,9 @@
       e.preventDefault()
     })
 
-    // back to top
+    // side bar
     setTimeout(function () {
-      $('.bs-sidebar').affix({
+      $('.bs-docs-sidenav').affix({
         offset: {
           top: function () { return $window.width() <= 980 ? 290 : 210 }
         , bottom: 270
@@ -23,13 +23,19 @@
       })
     }, 100)
 
-    setTimeout(function () {
-      $('.bs-top').affix()
-    }, 100)
+    // make code pretty
+    window.prettyPrint && prettyPrint()
+
+    // add-ons
+    $('.add-on :checkbox').on('click', function () {
+      var $this = $(this)
+        , method = $this.attr('checked') ? 'addClass' : 'removeClass'
+      $(this).parents('.add-on')[method]('active')
+    })
 
     // add tipsies to grid for scaffolding
-    if ($('#grid-system').length) {
-      $('#grid-system').tooltip({
+    if ($('#gridSystem').length) {
+      $('#gridSystem').tooltip({
           selector: '.show-grid > [class*="span"]'
         , title: function () { return $(this).width() + 'px' }
       })
@@ -42,11 +48,6 @@
 
     $('.tooltip-test').tooltip()
     $('.popover-test').popover()
-
-    $('.bs-docs-navbar').tooltip({
-      selector: "a[data-toggle=tooltip]",
-      container: ".bs-docs-navbar .nav"
-    })
 
     // popover demo
     $("a[data-toggle=popover]")
@@ -66,25 +67,25 @@
       })
 
     // carousel demo
-    $('.bs-docs-carousel-example').carousel()
+    $('#myCarousel').carousel()
 
     // javascript build logic
-    var inputsComponent = $("#less input")
-      , inputsPlugin = $("#plugins input")
-      , inputsVariables = $("#variables input")
+    var inputsComponent = $("#components.download input")
+      , inputsPlugin = $("#plugins.download input")
+      , inputsVariables = $("#variables.download input")
 
     // toggle all plugin checkboxes
-    $('#components .toggle').on('click', function (e) {
+    $('#components.download .toggle-all').on('click', function (e) {
       e.preventDefault()
-      inputsComponent.prop('checked', !inputsComponent.is(':checked'))
+      inputsComponent.attr('checked', !inputsComponent.is(':checked'))
     })
 
-    $('#plugins .toggle').on('click', function (e) {
+    $('#plugins.download .toggle-all').on('click', function (e) {
       e.preventDefault()
-      inputsPlugin.prop('checked', !inputsPlugin.is(':checked'))
+      inputsPlugin.attr('checked', !inputsPlugin.is(':checked'))
     })
 
-    $('#variables .toggle').on('click', function (e) {
+    $('#variables.download .toggle-all').on('click', function (e) {
       e.preventDefault()
       inputsVariables.val('')
     })
@@ -92,16 +93,16 @@
     // request built javascript
     $('.download-btn .btn').on('click', function () {
 
-      var css = $("#components input:checked")
+      var css = $("#components.download input:checked")
             .map(function () { return this.value })
             .toArray()
-        , js = $("#plugins input:checked")
+        , js = $("#plugins.download input:checked")
             .map(function () { return this.value })
             .toArray()
         , vars = {}
         , img = ['glyphicons-halflings.png', 'glyphicons-halflings-white.png']
 
-    $("#variables input")
+    $("#variables.download input")
       .each(function () {
         $(this).val() && (vars[ $(this).prev().text() ] = $(this).val())
       })
