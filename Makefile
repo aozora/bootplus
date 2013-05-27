@@ -15,9 +15,9 @@ build:
 	@echo "\n${HR}"
 	@echo "Building Bootplus..."
 	@echo "${HR}\n"
-	@./node_modules/.bin/jshint js/*.js --config js/.jshintrc
-	@./node_modules/.bin/jshint js/tests/unit/*.js --config js/.jshintrc
-	@echo "Running JSHint on javascript...             ${CHECK} Done"
+#	@./node_modules/.bin/jshint js/*.js --config js/.jshintrc
+#	@./node_modules/.bin/jshint js/tests/unit/*.js --config js/.jshintrc
+#	@echo "Running JSHint on javascript...             ${CHECK} Done"
 	@./node_modules/.bin/recess --compile ${BOOTPLUS_LESS} > ${BOOTPLUS}
 	@./node_modules/.bin/recess --compile ${BOOTPLUS_RESPONSIVE_LESS} > ${BOOTPLUS_RESPONSIVE}
 	@echo "Compiling LESS with Recess...               ${CHECK} Done"
@@ -78,7 +78,7 @@ bootplus/js/*.js: js/*.js
 	rm bootplus/js/copyright.js bootplus/js/bootstrap.min.tmp.js
 
 #
-# CSS COMPLILE
+# CSS COMPILE
 #
 
 bootplus-css: bootplus/css/*.css

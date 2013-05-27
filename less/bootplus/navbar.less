@@ -11,6 +11,8 @@
 // Gradient is applied to its own element because overflow visible is not honored by IE when filter is present
 .navbar-inner {
   border: 0;
+   .no-background;
+  .reset-filter();
   .border-radius(0);
   .box-shadow(none);
 }
@@ -37,6 +39,20 @@
    text-shadow: none;
 }
 
-//// hover
-//border-color: #427fed;
-//color: #262626;
+.navbar .nav > li > a:hover,
+.navbar .nav > li > a:focus {
+   border-color: #427fed;
+   color: #262626;
+}
+
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+   border-color: #427FED;
+   color: #262626;
+   font-weight: bold;
+   text-decoration: none;
+   .box-shadow(none);
+   .transition(border-color 0.218s ease 0s);
+}
