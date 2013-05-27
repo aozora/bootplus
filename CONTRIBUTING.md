@@ -1,17 +1,17 @@
-# Contributing to Bootstrap
+# Contributing to Bootplus
 
-Looking to contribute something to Bootstrap? **Here's how you can help.**
+Looking to contribute something to Bootplus? **Here's how you can help.**
 
 
 
 ## Reporting issues
 
-We only accept issues that are bug reports or feature requests. Bugs must be isolated and reproducible problems that we can fix within the Bootstrap core. Please read the following guidelines before opening any issue.
+We only accept issues that are bug reports or feature requests. Bugs must be isolated and reproducible problems that we can fix within the Bootplus core. Please read the following guidelines before opening any issue.
 
 1. **Search for existing issues.** We get a lot of duplicate issues, and you'd help us out a lot by first checking if someone else has reported the same issue. Moreover, the issue may have already been resolved with a fix available.
-2. **Create an isolated and reproducible test case.** Be sure the problem exists in Bootstrap's code with a [reduced test case](http://css-tricks.com/reduced-test-cases/) that should be included in each bug report.
+2. **Create an isolated and reproducible test case.** Be sure the problem exists in Bootplus's code with a [reduced test case](http://css-tricks.com/reduced-test-cases/) that should be included in each bug report.
 3. **Include a live example.** Make use of jsFiddle or jsBin to share your isolated test cases.
-4. **Share as much information as possible.** Include operating system and version, browser and version, version of Bootstrap, customized or vanilla build, etc. where appropriate. Also include steps to reproduce the bug.
+4. **Share as much information as possible.** Include operating system and version, browser and version, version of Bootplus, customized or vanilla build, etc. where appropriate. Also include steps to reproduce the bug.
 
 
 
@@ -25,7 +25,7 @@ We only accept issues that are bug reports or feature requests. Bugs must be iso
 
 ## Notes on the repo
 
-As of v2.0.0, Bootstrap's documentation is powered by Mustache templates and built via `make` before each commit and release. This was done to enable internationalization (translation) in a future release by uploading our strings to the [Twitter Translation Center](http://translate.twttr.com/). Any edits to the docs should be first done in the Mustache files and then recompiled into the HTML.
+As of v2.0.0, Bootplus's documentation is powered by Mustache templates and built via `make` before each commit and release. This was done to enable internationalization (translation) in a future release by uploading our strings to the [Twitter Translation Center](http://translate.twttr.com/). Any edits to the docs should be first done in the Mustache files and then recompiled into the HTML.
 
 
 
@@ -34,7 +34,7 @@ As of v2.0.0, Bootstrap's documentation is powered by Mustache templates and bui
 - Try to submit pull requests against the latest `*-wip` branch for easier merging
 - Any changes to the docs must be made to the Mustache templates, not just the compiled HTML pages
 - CSS changes must be done in .less files first, never just the compiled files
-- If modifying the .less files, always recompile and commit the compiled files bootstrap.css and bootstrap.min.css
+- If modifying the .less files, always recompile and commit the compiled files Bootplus.css and Bootplus.min.css
 - Try not to pollute your pull request with unintended changes--keep them simple and small
 - Try to share which browsers your code has been tested in before submitting a pull request
 
@@ -72,4 +72,4 @@ As of v2.0.0, Bootstrap's documentation is powered by Mustache templates and bui
 
 ## License
 
-By contributing your code, you agree to license your contribution under the terms of the APLv2: https://github.com/twitter/bootstrap/blob/master/LICENSE
+By contributing your code, you agree to license your contribution under the terms of the APLv2 or the GPLv2 (https://github.com/aozora/bootplus/blob/master/LICENSE)
