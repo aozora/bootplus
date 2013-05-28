@@ -26,7 +26,6 @@
 
 
    font-size: @baseFontSize;
-   line-height: @baseLineHeight;
    text-align: center;
    vertical-align: middle;
    cursor: pointer;
@@ -86,10 +85,18 @@
 
 // Large
 .btn-large {
+   height: 54px;
+   min-height: 54px;
    padding: @paddingLarge;
    font-size: @fontSizeLarge;
    .border-radius(@borderRadiusLarge);
 }
+a.btn-large {
+   height: 30px;
+   min-height: 30px;
+   line-height: 30px;
+}
+
 .btn-large [class^="icon-"],
 .btn-large [class*=" icon-"] {
    margin-top: 4px;

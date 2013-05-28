@@ -590,7 +590,7 @@ h2 + .row {
   padding: 39px 19px 14px;
   *padding-top: 19px;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #ebebeb;
   -webkit-border-radius: 2px;
      -moz-border-radius: 2px;
           border-radius: 2px;
@@ -606,7 +606,7 @@ h2 + .row {
   font-size: 12px;
   font-weight: bold;
   background-color: #f5f5f5;
-  border: 1px solid #ddd;
+  border: 1px solid #ebebeb;
   color: #9da0a4;
   -webkit-border-radius: 2px 0 2px 0;
      -moz-border-radius: 2px 0 2px 0;
