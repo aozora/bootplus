@@ -3,8 +3,9 @@ BOOTPLUS_LESS = ./less/bootplus/bootplus.less
 BOOTPLUS_RESPONSIVE = ./docs/assets/css/bootplus-responsive.css
 BOOTPLUS_RESPONSIVE_LESS = ./less/bootplus/responsive.less
 DATE=$(shell date +%I:%M%p)
-CHECK=\033[32m✔\033[39m
-HR=\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
+CHECK=\033[32m✔ Done\033[39m
+HR=\033[37m--------------------------------------------------\033[39m
+PATH := ./node_modules/.bin:$(PATH)
 
 
 #
@@ -15,23 +16,27 @@ build:
 	@echo "\n${HR}"
 	@echo "Building Bootplus..."
 	@echo "${HR}\n"
+#	@printf "Running JSHint on JavaScript..."
 #	@./node_modules/.bin/jshint js/*.js --config js/.jshintrc
 #	@./node_modules/.bin/jshint js/tests/unit/*.js --config js/.jshintrc
-#	@echo "Running JSHint on javascript...             ${CHECK} Done"
-	@./node_modules/.bin/recess --compile ${BOOTPLUS_LESS} > ${BOOTPLUS}
-	@./node_modules/.bin/recess --compile ${BOOTPLUS_RESPONSIVE_LESS} > ${BOOTPLUS_RESPONSIVE}
-	@echo "Compiling LESS with Recess...               ${CHECK} Done"
+#	@echo "             ${CHECK}"
+	@printf "Compiling LESS with Recess..."
+	@recess --compile ${BOOTPLUS_LESS} > ${BOOTPLUS}
+	@recess --compile ${BOOTPLUS_RESPONSIVE_LESS} > ${BOOTPLUS_RESPONSIVE}
+	@echo "             ${CHECK}"
+	@printf "Prepping documentation assets..."
 	@node docs/build
 	@cp img/* docs/assets/img/
 	@cp js/*.js docs/assets/js/
 	@cp js/tests/vendor/jquery.js docs/assets/js/
-	@echo "Compiling documentation...                  ${CHECK} Done"
-#	@cat js/bootstrap-transition.js js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-typeahead.js js/bootstrap-affix.js > docs/assets/js/bootstrap.js
-#	@./node_modules/.bin/uglifyjs -nc docs/assets/js/bootstrap.js > docs/assets/js/bootstrap.min.tmp.js
-#	@echo "/**\n* Bootstrap.js v2.3.2 by @fat & @mdo\n* Copyright 2012 Twitter, Inc.\n* http://www.apache.org/licenses/LICENSE-2.0.txt\n*/" > docs/assets/js/copyright.js
-#	@cat docs/assets/js/copyright.js docs/assets/js/bootstrap.min.tmp.js > docs/assets/js/bootstrap.min.js
-#	@rm docs/assets/js/copyright.js docs/assets/js/bootstrap.min.tmp.js
-#	@echo "Compiling and minifying javascript...       ${CHECK} Done"
+	@echo "             ${CHECK}"
+	@printf "Compiling and minifying JavaScript..."
+	@cat js/bootstrap-transition.js js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-typeahead.js js/bootstrap-affix.js > docs/assets/js/bootstrap.js
+	@uglifyjs docs/assets/js/bootstrap.js -nc > docs/assets/js/bootstrap.min.tmp.js
+	@echo "/**\n* Bootstrap.js v2.3.2 by @fat & @mdo\n* Copyright 2012 Twitter, Inc.\n* http://www.apache.org/licenses/LICENSE-2.0.txt\n*/" > docs/assets/js/copyright.js
+	@cat docs/assets/js/copyright.js docs/assets/js/bootstrap.min.tmp.js > docs/assets/js/bootstrap.min.js
+	@rm docs/assets/js/copyright.js docs/assets/js/bootstrap.min.tmp.js
+	@echo "             ${CHECK}"
 	@echo "\n${HR}"
 	@echo "Bootplus successfully built at ${DATE}."
 	@echo "${HR}\n"
@@ -72,7 +77,7 @@ bootplus-js: bootplus/js/*.js
 bootplus/js/*.js: js/*.js
 	mkdir -p bootplus/js
 	cat js/bootstrap-transition.js js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-affix.js > bootplus/js/bootstrap.js
-	./node_modules/.bin/uglifyjs -nc bootplus/js/bootstrap.js > bootplus/js/bootstrap.min.tmp.js
+	uglifyjs bootplus/js/bootstrap.js -nc > bootplus/js/bootstrap.min.tmp.js
 	echo "/*!\n* Bootstrap.js by @fat & @mdo\n* Copyright 2012 Twitter, Inc.\n* http://www.apache.org/licenses/LICENSE-2.0.txt\n*/" > bootplus/js/copyright.js
 	cat bootplus/js/copyright.js bootplus/js/bootstrap.min.tmp.js > bootplus/js/bootstrap.min.js
 	rm bootplus/js/copyright.js bootplus/js/bootstrap.min.tmp.js
@@ -109,7 +114,8 @@ gh-pages: bootplus docs
 	rm -f docs/assets/bootplus.zip
 	zip -r docs/assets/bootplus.zip bootplus
 	rm -r bootplus
-	rm -f ../bootplus-gh-pages/assets/bootplus.zip
+	#rm -f ../bootplus-gh-pages/assets/bootplus.zip
+	mkdir -p ../bootplus-gh-pages
 	node docs/build production
 	cp -r docs/* ../bootplus-gh-pages
 
