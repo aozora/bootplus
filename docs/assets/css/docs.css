@@ -253,7 +253,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 ------------------------- */
 .subhead {
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  /*border-bottom: 1px solid #ddd;*/
 }
 /*.subhead h1 {*/
   /*font-size: 28px;*/
