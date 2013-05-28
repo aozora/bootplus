@@ -838,7 +838,6 @@ form.bs-docs-example {
 .bs-docs-sidenav > .active > a {
   position: relative;
   z-index: 2;
-  padding: 9px 15px;
   border: 0;
   text-shadow: none;
    color: #262626;
