@@ -2,3 +2,29 @@
 // Forms
 // --------------------------------------------------
 
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  .box-shadow(0 2px 4px 0 rgba(0, 0, 0, 0.08) inset);
+  .transition(~"border linear .2s, box-shadow linear .2s");
+
+  // Focus state
+  &:focus,
+  &:hover {
+    border-color: #DCDCDC;
+    .box-shadow(~"0 2px 4px 0 rgba(0,0,0,0.04) inset");
+  }
+}
