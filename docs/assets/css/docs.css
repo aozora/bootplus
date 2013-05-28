@@ -591,9 +591,9 @@ h2 + .row {
   *padding-top: 19px;
   background-color: #fff;
   border: 1px solid #ddd;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
 }
 
 /* Echo out a label for the example */
@@ -608,9 +608,9 @@ h2 + .row {
   background-color: #f5f5f5;
   border: 1px solid #ddd;
   color: #9da0a4;
-  -webkit-border-radius: 4px 0 4px 0;
-     -moz-border-radius: 4px 0 4px 0;
-          border-radius: 4px 0 4px 0;
+  -webkit-border-radius: 2px 0 2px 0;
+     -moz-border-radius: 2px 0 2px 0;
+          border-radius: 2px 0 2px 0;
 }
 
 /* Remove spacing between an example and it's code */
@@ -840,7 +840,7 @@ form.bs-docs-example {
   z-index: 2;
   padding: 9px 15px;
   border: 0;
-  /*text-shadow: none;*/
+  text-shadow: none;
    color: #262626;
    background-color: #F5F5F5;
   -webkit-box-shadow: none;

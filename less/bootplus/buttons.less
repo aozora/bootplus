@@ -12,8 +12,19 @@
    .ie7-inline-block();
    font-weight: 400;
    padding: 0 8px;
-   margin: 0 20px;
-   margin-bottom: 0; // For input.btn
+   margin: 0;
+
+   height: 29px;
+   min-height: 29px;
+   line-height: 29px;
+   vertical-align: bottom;
+   min-width: 46px;
+   text-align: center;
+   color: @grayDark;
+//   font-size: 11px;
+   font-weight: bold;
+
+
    font-size: @baseFontSize;
    line-height: @baseLineHeight;
    text-align: center;
@@ -31,10 +42,11 @@
    &:hover,
    &:focus {
       text-decoration: none;
-//      background-position: 0 -15px;
+      background-position: 0 -15px;
+//      .buttonBackground(darken(@btnBackground, 0.6%), @btnBackgroundHighlight, @grayDark, none);
       .box-shadow(0 1px 1px rgba(0,0,0,.1));
-      color: @grayDarker;
-      border-color: darken(@btnBorder, 0.6%);
+      color: @grayDarken;
+//      border-color: darken(@btnBorder, 0.6%);
 
       // transition is only when going to hover/focus, otherwise the background
       // behind the gradient (there for IE<=9 fallback) gets mismatched
@@ -159,6 +171,9 @@ input[type="button"] {
 // -------------------------
 .btn-primary {
    .buttonBackground(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight);
+//   &:hover {
+//      .buttonBackground(darken(@btnPrimaryBackground, 0.6%), @btnPrimaryBackgroundHighlight);
+//   }
 }
 // Warning appears are orange
 .btn-warning {

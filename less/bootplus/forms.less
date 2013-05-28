@@ -18,13 +18,32 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-  .box-shadow(0 2px 4px 0 rgba(0, 0, 0, 0.08) inset);
-  .transition(~"border linear .2s, box-shadow linear .2s");
+//   margin: 0;
+   padding: 0 8px;
+   border-top: 1px solid #c0c0c0;
+  .box-shadow(inset 0 1px 2px rgba(0,0,0,0.1));
+   min-height: 29px;
 
   // Focus state
   &:focus,
   &:hover {
-    border-color: #DCDCDC;
-    .box-shadow(~"0 2px 4px 0 rgba(0,0,0,0.04) inset");
+    border-color: #b9b9b9;
+     border-top-color: #a0a0a0;
+    .box-shadow(inset 0 1px 2px rgba(0,0,0,0.1));
   }
+}
+
+
+
+
+input.search-query {
+   padding: 0 8px;
+   .border-radius(@inputBorderRadius);
+}
+
+
+.form-search > .btn[type="submit"] {
+   .btn-primary;
+   padding: 0 24px;
+   margin: 0 15px;
 }
