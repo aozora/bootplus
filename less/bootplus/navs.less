@@ -5,19 +5,54 @@
 // NAV LIST
 // --------
 .nav-list {
-   background-color: #f5f5f5;
-   border-bottom: 1px solid #d5d5d5;
+  background-color: @grayLighter;
+  border: 1px solid @navlistBorder;
+  border-bottom: 1px solid @navlistBorderBottom;
+  border-bottom-width: 2px;
+  border-top-width: 0;
+  .border-radius(@borderRadiusSmall);
 }
+
+.nav-list > li {
+  background-color: @white;
+}
+
 
 .nav-list > li > a,
 .nav-list .nav-header {
-
+   padding: 9px 18px;
+   margin-top: 1px;
+   border-left: 2px solid transparent;
    .transition(border .218s);
    background-color: @white;
-   border-left: 2px solid transparent;
-   color: #737373;
-   margin-top: 1px;
-   padding: 9px 18px;
+   font-size: 14px;
+   line-height: 1.4;
+   color: @navbarLinkColor;
+   text-shadow: none;
+   text-overflow: ellipsis;
+   overflow: hidden;
+}
 
+.nav-list .nav-header {
+   color: @linkColor;
+}
+
+.nav li + .nav-header {
+  margin-top: 1px;
+}
+
+.nav-list > li > a:hover, .nav-list > li > a:focus,
+.nav-list > .active > a,
+.nav-list > .active > a:hover,
+.nav-list > .active > a:focus {
+  border-color: @navbarBorder;
+  color: @navbarLinkColorHover;
   text-shadow: none;
+  background-color: @grayLighter;
+}
+
+
+/* just ignore divider, default nav-list has always dividers between items */
+.nav-list .divider {
+  display: none;
 }

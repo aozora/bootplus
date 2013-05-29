@@ -25,7 +25,7 @@
 // Links
 .navbar .nav > li > a {
    border-bottom: 2px solid transparent;
-   color: #737373;
+   color: @navbarLinkColor;
    font-size: 14px;
    line-height: 1.4;
    margin: 0 18px;
@@ -41,16 +41,16 @@
 
 .navbar .nav > li > a:hover,
 .navbar .nav > li > a:focus {
-   border-color: #427fed;
-   color: #262626;
+   border-color: @navbarBorder;
+   color: @navbarLinkColorHover;
 }
 
 
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus {
-   border-color: #427FED;
-   color: #262626;
+   border-color: @navbarBorder;
+   color: @navbarLinkColorHover;
    font-weight: bold;
    text-decoration: none;
    .box-shadow(none);
