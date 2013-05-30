@@ -14,6 +14,7 @@
 @grayDarken:            #333;
 @grayDark:              #444;
 @gray:                  #333;
+@graySemiLight:         #737373;
 @grayLight:             #999;
 @grayLighter:           #f5f5f5;
 @white:                 #fff;
@@ -187,8 +188,8 @@
 @navbarBackground:                @grayLighter; //darken(@navbarBackgroundHighlight, 5%);
 @navbarBorder:                    #427fed; //darken(@navbarBackground, 12%);
 
-@navbarText:                      #737373;
-@navbarLinkColor:                 #737373;
+@navbarText:                      @graySemiLight;
+@navbarLinkColor:                 @graySemiLight;
 @navbarLinkColorHover:            #262626;
 @navbarLinkColorActive:           @white;
 @navbarLinkBackgroundHover:       transparent;
@@ -256,15 +257,15 @@
 
 // Tooltips and popovers
 // -------------------------
-@tooltipColor:            #fff;
-@tooltipBackground:       #000;
+@tooltipColor:            @white;
+@tooltipBackground:       @black;
 @tooltipArrowWidth:       5px;
 @tooltipArrowColor:       @tooltipBackground;
 
-@popoverBackground:       #fff;
+@popoverBackground:       @white;
 @popoverArrowWidth:       5px;
-@popoverArrowColor:       #fff;
-@popoverTitleBackground:  darken(@popoverBackground, 3%);
+@popoverArrowColor:       @white;
+@popoverTitleBackground:  @popoverBackground; //darken(@popoverBackground, 3%);
 
 // Special enhancement for popovers
 @popoverArrowOuterWidth:  @popoverArrowWidth + 1;
