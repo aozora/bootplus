@@ -1,0 +1,60 @@
+//
+// Cards
+// --------------------------------------------------
+
+
+.card {
+   margin: 10px 0 20px 0;
+   padding-top: 20px;
+   border: 1px solid @navlistBorder;
+   border-bottom-width: 2px;
+   border-top-width: 0;
+   
+   background-color: @white;
+   .border-radius(@borderRadiusSmall);
+   .box-shadow(none);
+
+   .box-sizing(border-box);
+
+
+
+   .card-heading {
+      
+      padding: 0 20px;
+         margin: 0;
+
+      &.simple {
+         border-bottom: 1px solid @whiteSmoke;
+         color: #777;
+         font-size: 20px;
+         font-weight: 300;
+      }
+   }
+
+   .card-body {
+      margin-top: 20px;
+      padding: 0 20px;
+   }
+
+   .card-footer {
+      padding: 20px 0;
+      margin: 0;
+      background-color: @cardFooterBackground;
+
+      .comments-collapse-toggle {
+         margin: 0 20px 12px 20px;
+         padding: 0;
+
+         span {
+            color: #999;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 12px;
+            padding-right: 5px;
+         }
+      }
+   }
+
+
+}

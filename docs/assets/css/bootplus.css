@@ -7797,3 +7797,58 @@ input.search-query {
        -o-transition: background-color 200ms cubic-bezier(0.52, 0, 0.48, 1);
           transition: background-color 200ms cubic-bezier(0.52, 0, 0.48, 1);
 }
+
+.card {
+  padding-top: 20px;
+  margin: 10px 0 20px 0;
+  background-color: #ffffff;
+  border: 1px solid #d8d8d8;
+  border-top-width: 0;
+  border-bottom-width: 2px;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.card .card-heading {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.card .card-heading.simple {
+  font-size: 20px;
+  font-weight: 300;
+  color: #777;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.card .card-body {
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.card .card-footer {
+  padding: 20px 0;
+  margin: 0;
+  background-color: #f8f8f8;
+}
+
+.card .card-footer .comments-collapse-toggle {
+  padding: 0;
+  margin: 0 20px 12px 20px;
+}
+
+.card .card-footer .comments-collapse-toggle span {
+  padding-right: 5px;
+  overflow: hidden;
+  font-size: 12px;
+  color: #999;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
