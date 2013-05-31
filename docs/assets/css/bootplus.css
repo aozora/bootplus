@@ -7834,7 +7834,7 @@ input.search-query {
 }
 
 .card .card-footer {
-  padding: 20px 0;
+  padding: 20px;
   margin: 0;
   background-color: #f8f8f8;
 }
@@ -7844,6 +7844,7 @@ input.search-query {
   margin: 0 20px 12px 20px;
 }
 
+.card .card-footer .comments-collapse-toggle a,
 .card .card-footer .comments-collapse-toggle span {
   padding-right: 5px;
   overflow: hidden;
@@ -7851,4 +7852,9 @@ input.search-query {
   color: #999;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.card-footer .media-heading {
+  font-size: 13px;
+  font-weight: bold;
 }
