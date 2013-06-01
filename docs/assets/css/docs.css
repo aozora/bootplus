@@ -198,30 +198,14 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 
 /* Masthead (docs home)
 ------------------------- */
-/*.masthead {*/
-  /*padding: 70px 0 80px;*/
-  /*margin-bottom: 0;*/
-  /*color: #fff;*/
-/*}*/
 .masthead h1 {
   font-size: 38px;
-  /*line-height: 1;*/
-  letter-spacing: -2px;
+  line-height: 1;
+  /*letter-spacing: -2px;*/
 }
 .subhead.masthead p {
    margin-bottom: 0;
 }
-
-/* Textual links in masthead */
-/*.masthead-links {*/
-  /*margin: 0;*/
-  /*list-style: none;*/
-/*}*/
-/*.masthead-links li {*/
-  /*display: inline;*/
-  /*padding: 0 10px;*/
-  /*color: rgba(255,255,255,.25);*/
-/*}*/
 
 /* Social proof buttons from GitHub & Twitter */
 .bs-docs-social {
@@ -251,11 +235,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 ------------------------- */
 .subhead {
   text-align: left;
-  /*border-bottom: 1px solid #ddd;*/
 }
-/*.subhead h1 {*/
-  /*font-size: 28px;*/
-/*}*/
 .subhead p {
   margin-bottom: 20px;
 }
@@ -289,8 +269,6 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
    margin-bottom: 5px;
 }
 .marketing p {
-  /*font-size: 16px;*/
-  /*line-height: 1.5;*/
    color: #404040;
 }
 .marketing .marketing-byline {
