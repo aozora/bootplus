@@ -7925,7 +7925,15 @@ input.search-query {
   display: inline-block;
   width: 170px;
   height: 150px;
+  background-color: #ffffff;
+}
+
+.card.people .card-top.green {
   background-color: #53a93f;
+}
+
+.card.people .card-top.blue {
+  background-color: #427fed;
 }
 
 .card.people .card-info {
@@ -7973,4 +7981,61 @@ input.search-query {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.card.hovercard {
+  position: relative;
+  width: 240px;
+  padding-top: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+}
+
+.card.hovercard img {
+  width: 240px;
+  height: 135px;
+}
+
+.card.hovercard .avatar {
+  position: relative;
+  top: -40px;
+  margin-bottom: -40px;
+}
+
+.card.hovercard .avatar img {
+  width: 80px;
+  height: 80px;
+  max-width: 80px;
+  max-height: 80px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.card.hovercard .info {
+  padding: 4px 8px 10px;
+}
+
+.card.hovercard .info .title {
+  margin-bottom: 4px;
+  font-size: 24px;
+  color: #262626;
+  vertical-align: middle;
+}
+
+.card.hovercard .info .desc {
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 20px;
+  color: #737373;
+  text-overflow: ellipsis;
+}
+
+.card.hovercard .bottom {
+  margin-bottom: 17px;
+}
+
+.card.hovercard .bottom .btn {
+  width: 85px;
 }

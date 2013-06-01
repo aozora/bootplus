@@ -140,32 +140,32 @@ hr.soften {
 }
 
 /* Download button */
-.masthead .btn {
-  padding: 19px 24px;
-  font-size: 24px;
-  font-weight: 200;
-  color: #fff; /* redeclare to override the `.jumbotron a` */
-  border: 0;
-  -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-     -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-          box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-  -webkit-transition: none;
-     -moz-transition: none;
-          transition: none;
-}
-.masthead .btn:hover {
-  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-     -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-          box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-}
-.masthead .btn:active {
-  -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
-     -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
-          box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
-}
+/*.masthead .btn {*/
+  /*padding: 19px 24px;*/
+  /*font-size: 24px;*/
+  /*font-weight: 200;*/
+  /*color: #fff; *//* redeclare to override the `.jumbotron a` */
+  /*border: 0;*/
+  /*-webkit-border-radius: 6px;*/
+     /*-moz-border-radius: 6px;*/
+          /*border-radius: 6px;*/
+  /*-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);*/
+     /*-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);*/
+          /*box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);*/
+  /*-webkit-transition: none;*/
+     /*-moz-transition: none;*/
+          /*transition: none;*/
+/*}*/
+/*.masthead .btn:hover {*/
+  /*-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);*/
+     /*-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);*/
+          /*box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);*/
+/*}*/
+/*.masthead .btn:active {*/
+  /*-webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);*/
+     /*-moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);*/
+          /*box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);*/
+/*}*/
 
 
 /* Pattern overlay
@@ -182,7 +182,7 @@ hr.soften {
   right: 0;
   bottom: 0;
   left: 0;
-  background: url(../img/bkg-jumbotron.jpg) repeat bottom right;
+  background: #F9F9F9 url(../img/bkg-jumbotron.jpg) no-repeat bottom right;
   /*opacity: .4;*/
 }
 @media
@@ -198,32 +198,30 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 
 /* Masthead (docs home)
 ------------------------- */
-.masthead {
-  padding: 70px 0 80px;
-  margin-bottom: 0;
-  color: #fff;
-}
+/*.masthead {*/
+  /*padding: 70px 0 80px;*/
+  /*margin-bottom: 0;*/
+  /*color: #fff;*/
+/*}*/
 .masthead h1 {
-  font-size: 120px;
-  line-height: 1;
+  font-size: 38px;
+  /*line-height: 1;*/
   letter-spacing: -2px;
 }
-.masthead p {
-  font-size: 40px;
-  font-weight: 200;
-  line-height: 1.25;
+.subhead.masthead p {
+   margin-bottom: 0;
 }
 
 /* Textual links in masthead */
-.masthead-links {
-  margin: 0;
-  list-style: none;
-}
-.masthead-links li {
-  display: inline;
-  padding: 0 10px;
-  color: rgba(255,255,255,.25);
-}
+/*.masthead-links {*/
+  /*margin: 0;*/
+  /*list-style: none;*/
+/*}*/
+/*.masthead-links li {*/
+  /*display: inline;*/
+  /*padding: 0 10px;*/
+  /*color: rgba(255,255,255,.25);*/
+/*}*/
 
 /* Social proof buttons from GitHub & Twitter */
 .bs-docs-social {
