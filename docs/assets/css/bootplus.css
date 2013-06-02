@@ -8020,6 +8020,7 @@ input.search-query {
 .card.hovercard .info .title {
   margin-bottom: 4px;
   font-size: 24px;
+  line-height: 1;
   color: #262626;
   vertical-align: middle;
 }
