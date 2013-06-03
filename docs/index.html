@@ -134,48 +134,64 @@
    <div class="row marketing">
 
       <div class="span4">
-         <div class="card">
-            <h3 class="card-heading simple">Download</h3>
-            <div class="card-body">
-               <p class="lead">
-                  <img class="pull-left" src="assets/img/logo.png" width="48" height="48" alt="bootplus"/>
-                  Latest version is 1.0.0
-               </p>
+
+         <div id="card-downloads" class="card">
+            <div class="card-heading image">
+               <img src="assets/img/logo.png" width="46" height="46" alt=""/>
+               <div class="card-heading-header">
+                  <h3>DOWNLOAD</h3>
+                  <span>Latest version is 1.0.0</span>
+               </div>
             </div>
             <div class="card-actions">
-               <button class="btn btn-primary">Download package</button>
-               <button class="btn btn-info">Download sources</button>
+               <a class="btn btn-block btn-large btn-primary" href="assets/bootplus.zip">Download package</a>
+               <a class="btn btn-block btn-large btn-success" href="https://github.com/aozora/bootplus/archive/master.zip">Download sources</a>
             </div>
          </div>
 
          <div class="card">
-            <img class="marketing-img" src="assets/img/bs-docs-twitter-github.png">
-            <h2>By nerds, for nerds.</h2>
-            <p>Built at Twitter by <a href="http://twitter.com/mdo">@mdo</a> and <a href="http://twitter.com/fat">@fat</a>, Bootstrap utilizes <a href="http://lesscss.org">LESS CSS</a>, is compiled via <a href="http://nodejs.org">Node</a>, and is managed through <a href="http://github.com">GitHub</a> to help nerds do awesome stuff on the web.</p>
+            <div class="card-media">
+               <a class="card-media-container" href="#">
+                  <img src="assets/img/bs-docs-twitter-github.png" alt="twitter-github"/>
+               </a>
+            </div>
+            <div class="card-body">
+               <h2>Built with Bootstrap.</h2>
+               <p>Bootplus is built on top of <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a> as a customization that reproduce the most recent Google+ style.</p>
+               <p>Bootplus utilizes <a href="http://lesscss.org">LESS CSS</a>, is compiled via <a href="http://nodejs.org">Node</a>, and is managed through <a href="http://github.com">GitHub</a> to help nerds do awesome stuff on the web.</p>
+            </div>
          </div>
 
-
-         <div class="card">
-            <!--<h1>Introducing Bootstrap.</h1>-->
-            <!--<p class="marketing-byline">Need reasons to love Bootstrap? Look no further.</p>-->
-            <h2>Built with Bootstrap</h2>
-            <p>Bootplus is built on top of Twitter Bootstrap as a customization that reproduce the most recent Google+ style.</p>
-         </div>         
 
       </div>
 
       <div class="span4">
-         <div class="card">
-            <img class="marketing-img" src="assets/img/bs-docs-responsive-illustrations.png">
-            <h2>Made for everyone.</h2>
-            <p>Bootplus was made to not only look and behave great in the latest desktop browsers (as well as IE7!), but in tablet and smartphone browsers via <a href="./scaffolding.html#responsive">responsive CSS</a> as well.</p>
+         <div id="card-media" class="card">
+            <div class="card-media">
+               <div class="card-media-container" href="#">
+                  <i class="icon-desktop"></i>
+                  <i class="icon-tablet"></i>
+                  <i class="icon-mobile-phone"></i>
+               </div>
+            </div>
+            <div class="card-body">
+               <h2>Made for everyone.</h2>
+               <p>Bootplus was made to not only look and behave great in the latest desktop browsers (as well as IE7!), but in tablet and smartphone browsers via <a href="./scaffolding.html#responsive">responsive CSS</a> as well.</p>
+            </div>
          </div>
 
-         <div class="card">
-            <img class="marketing-img" src="assets/img/bs-docs-bootstrap-features.png">
-            <h2>Packed with features.</h2>
-            <p>A 12-column responsive <a href="./scaffolding.html#gridSystem">grid</a>, dozens of components, <a href="./javascript.html">JavaScript plugins</a>, typography, form controls, and even a <a href="./customize.html">web-based Customizer</a> to make Bootstrap your own.</p>
+         <div id="card-features" class="card">
+            <div class="card-media-container" href="#">
+               <i class="icon-html5"></i>
+               <i class="icon-css3"></i>
+               <i class="icon-wrench"></i>
+            </div>
+            <div class="card-body">
+               <h2>Packed with features.</h2>
+               <p>A 12-column responsive <a href="./scaffolding.html#gridSystem">grid</a>, dozens of components, <a href="./javascript.html">JavaScript plugins</a>, typography, form controls, and even a <a href="./customize.html">web-based Customizer</a> to make Bootplus your own.</p>
+            </div>
          </div>
+
       </div>
 
       <div class="span4">
@@ -186,17 +202,17 @@
             </div>
             <div class="info">
                <div class="title">
-                  Made by<br/>Marcello Palmitessa
+                  <a href="http://www.marcellop.com">Made by<br/>Marcello Palmitessa</a>
                </div>
                <div class="desc">Passionate designer</div>
                <div class="desc">Curious developer</div>
                <div class="desc">Tech geek</div>
             </div>
             <div class="bottom">
-               <button class="btn">
-                  <i class="icon-twitter-sign"></i>
+               <a href="https://twitter.com/aozoralabs" class="btn">
+                  <i class="icon-twitter"></i>
                   Follow
-               </button>
+               </a>
             </div>
          </div>
       </div>

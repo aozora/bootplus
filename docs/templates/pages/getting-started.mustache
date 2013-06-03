@@ -15,7 +15,7 @@
     <div class="row">
       <div class="span3 bs-docs-sidebar">
         <ul class="nav nav-list bs-docs-sidenav">
-          <li><a href="#download-bootstrap"><i class="icon-chevron-right"></i> {{_i}}Download{{/i}}</a></li>
+          <li><a href="#download-bootplus"><i class="icon-chevron-right"></i> {{_i}}Download{{/i}}</a></li>
           <li><a href="#file-structure"><i class="icon-chevron-right"></i> {{_i}}File structure{{/i}}</a></li>
           <li><a href="#contents"><i class="icon-chevron-right"></i> {{_i}}What's included{{/i}}</a></li>
           <li><a href="#html-template"><i class="icon-chevron-right"></i> {{_i}}HTML template{{/i}}</a></li>
@@ -29,7 +29,7 @@
 
         <!-- Download
         ================================================== -->
-        <section id="download-bootstrap">
+        <section id="download-bootplus">
           <div class="page-header">
             <h1>{{_i}}1. Download{{/i}}</h1>
           </div>
@@ -39,12 +39,12 @@
             <div class="span6">
               <h2>{{_i}}Download compiled{{/i}}</h2>
               <p>{{_i}}<strong>Fastest way to get started:</strong> get the compiled and minified versions of our CSS, JS, and images. No docs or original source files.{{/i}}</p>
-              <p><a class="btn btn-large btn-primary" href="assets/bootstrap.zip" {{#production}}onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download compiled']);"{{/production}}>{{_i}}Download Bootstrap{{/i}}</a></p>
+              <p><a class="btn btn-large btn-primary" href="assets/bootplus.zip" {{#production}}onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download compiled']);"{{/production}}>{{_i}}Download Bootplus{{/i}}</a></p>
             </div>
             <div class="span6">
               <h2>Download source</h2>
               <p>Get the original files for all CSS and JavaScript, along with a local copy of the docs by downloading the latest version directly from GitHub.</p>
-              <p><a class="btn btn-large" href="https://github.com/twitter/bootstrap/zipball/master" {{#production}}onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download source']);"{{/production}}>{{_i}}Download Bootstrap source{{/i}}</a></p>
+              <p><a class="btn btn-large" href="https://github.com/twitter/bootplus/zipball/master" {{#production}}onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download source']);"{{/production}}>{{_i}}Download Bootplus source{{/i}}</a></p>
             </div>
           </div>
         </section>
@@ -60,18 +60,21 @@
           <p class="lead">{{_i}}Within the download you'll find the following file structure and contents, logically grouping common assets and providing both compiled and minified variations.{{/i}}</p>
           <p>{{_i}}Once downloaded, unzip the compressed folder to see the structure of (the compiled) Bootstrap. You'll see something like this:{{/i}}</p>
 <pre class="prettyprint">
-  bootstrap/
+  bootplus/
   ├── css/
-  │   ├── bootstrap.css
-  │   ├── bootstrap.min.css
-  ├── js/
-  │   ├── bootstrap.js
-  │   ├── bootstrap.min.js
-  └── img/
-      ├── glyphicons-halflings.png
-      └── glyphicons-halflings-white.png
+  │   ├── bootplus.css
+  │   ├── bootplus.min.css
+  ├── font/
+  │   ├── fontawesome-webfont.eot
+  │   ├── fontawesome-webfont.svg
+  │   ├── fontawesome-webfont.ttf
+  │   ├── fontawesome-webfont.woff
+  │   └── FontAwesome.otf
+  └── js/
+      ├── bootstrap.js
+      ├── bootstrap.min.js
 </pre>
-          <p>{{_i}}This is the most basic form of Bootstrap: compiled files for quick drop-in usage in nearly any web project. We provide compiled CSS and JS (<code>bootstrap.*</code>), as well as compiled and minified CSS and JS (<code>bootstrap.min.*</code>). The image files are compressed using <a href="http://imageoptim.com/">ImageOptim</a>, a Mac app for compressing PNGs.{{/i}}</p>
+          <p>{{_i}}This is the most basic form of Bootplus: compiled files for quick drop-in usage in nearly any web project. We provide compiled CSS and the original Bootstrap JS (<code>bootstrap.*</code>), as well as compiled and minified CSS and JS (<code>bootstrap.min.*</code>). The image files are compressed using <a href="http://imageoptim.com/">ImageOptim</a>, a Mac app for compressing PNGs.{{/i}}</p>
           <p>{{_i}}Please note that all JavaScript plugins require jQuery to be included.{{/i}}</p>
         </section>
 
@@ -83,16 +86,18 @@
           <div class="page-header">
             <h1>{{_i}}3. What's included{{/i}}</h1>
           </div>
-          <p class="lead">{{_i}}Bootstrap comes equipped with HTML, CSS, and JS for all sorts of things, but they can be summarized with a handful of categories visible at the top of the <a href="http://getbootstrap.com">Bootstrap documentation</a>.{{/i}}</p>
+          <p class="lead">{{_i}}Bootplus comes equipped with HTML, CSS, and JS for all sorts of things, but they can be summarized with a handful of categories visible at the top of the <a href="http://getbootstrap.com">Bootstrap documentation</a>.{{/i}}</p>
 
           <h2>{{_i}}Docs sections{{/i}}</h2>
-          <h4><a href="http://twitter.github.com/bootstrap/scaffolding.html">{{_i}}Scaffolding{{/i}}</a></h4>
+          <h4><a href="http://twitter.github.com/bootplus/scaffolding.html">{{_i}}Scaffolding{{/i}}</a></h4>
           <p>{{_i}}Global styles for the body to reset type and background, link styles, grid system, and two simple layouts.{{/i}}</p>
-          <h4><a href="http://twitter.github.com/bootstrap/base-css.html">{{_i}}Base CSS{{/i}}</a></h4>
+          <h4><a href="http://twitter.github.com/bootplus/base-css.html">{{_i}}Base CSS{{/i}}</a></h4>
           <p>{{_i}}Styles for common HTML elements like typography, code, tables, forms, and buttons. Also includes <a href="http://glyphicons.com">Glyphicons</a>, a great little icon set.{{/i}}</p>
-          <h4><a href="http://twitter.github.com/bootstrap/components.html">{{_i}}Components{{/i}}</a></h4>
+          <h4><a href="http://twitter.github.com/bootplus/components.html">{{_i}}Components{{/i}}</a></h4>
           <p>{{_i}}Basic styles for common interface components like tabs and pills, navbar, alerts, page headers, and more.{{/i}}</p>
-          <h4><a href="http://twitter.github.com/bootstrap/javascript.html">{{_i}}JavaScript plugins{{/i}}</a></h4>
+          <h4><a href="http://twitter.github.com/bootplus/plus.html">{{_i}}Plus{{/i}}</a></h4>
+          <p>{{_i}}Special components similar to the ones you can find on Google+ pages, like cards and custom dialogs.{{/i}}</p>
+          <h4><a href="http://twitter.github.com/bootplus/javascript.html">{{_i}}JavaScript plugins{{/i}}</a></h4>
           <p>{{_i}}Similar to Components, these JavaScript plugins are interactive components for things like tooltips, popovers, modals, and more.{{/i}}</p>
 
           <h2>{{_i}}List of components{{/i}}</h2>
@@ -115,6 +120,8 @@
             <li>{{_i}}Accordion{{/i}}</li>
             <li>{{_i}}Carousel{{/i}}</li>
             <li>{{_i}}Typeahead{{/i}}</li>
+            <li>{{_i}}News Cards{{/i}}</li>
+            <li>{{_i}}People Cards{{/i}}</li>
           </ul>
           <p>{{_i}}In future guides, we may walk through these components individually in more detail. Until then, look for each of these in the documentation for information on how to utilize and customize them.{{/i}}</p>
         </section>
@@ -133,7 +140,7 @@
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
-    &lt;title&gt;Bootstrap 101 Template&lt;/title&gt;
+    &lt;title&gt;Bootplus 101 Template&lt;/title&gt;
     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
   &lt;/head&gt;
   &lt;body&gt;
@@ -149,8 +156,8 @@
   &lt;head&gt;
     &lt;title&gt;Bootstrap 101 Template&lt;/title&gt;
     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;!-- Bootstrap --&gt;
-    &lt;link href="css/bootstrap.min.css" rel="stylesheet" media="screen"&gt;
+    &lt;!-- Bootplus --&gt;
+    &lt;link href="css/bootplus.min.css" rel="stylesheet" media="screen"&gt;
   &lt;/head&gt;
   &lt;body&gt;
     &lt;h1&gt;Hello, world!&lt;/h1&gt;
@@ -159,7 +166,7 @@
   &lt;/body&gt;
 &lt;/html&gt;
 </pre>
-          <p>{{_i}}<strong>And you're set!</strong> With those two files added, you can begin to develop any site or application with Bootstrap.{{/i}}</p>
+          <p>{{_i}}<strong>And you're set!</strong> With those two files added, you can begin to develop any site or application with Bootplus.{{/i}}</p>
         </section>
 
 

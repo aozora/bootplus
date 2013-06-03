@@ -248,13 +248,12 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 /* Marketing section of Overview
 -------------------------------------------------- */
 
-.marketing {
-  text-align: center;
+/*.marketing {
   color: #5a5a5a;
 }
 .marketing .well {
   margin-top: 30px;
-}
+}*/
 .marketing h1 {
   margin: 60px 0 10px;
   font-size: 60px;
@@ -282,6 +281,27 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   display: block;
   margin: 0 auto 30px;
   max-height: 70px;
+}
+
+
+
+#card-downloads .btn.btn-large {
+  margin-bottom: 20px;
+  height: auto;
+}
+
+#card-features .card-media-container,
+#card-media .card-media-container {
+  padding: 0 20px;
+  text-align: center;
+}
+
+#card-features .card-media-container i,
+#card-media .card-media-container i {
+    font-size: 72px;
+    margin-right: 20px;
+    opacity: 0.8;
+    vertical-align: bottom;
 }
 
 
