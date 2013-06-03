@@ -198,18 +198,18 @@
 @navbarBrandColor:                @navbarLinkColor;
 
 // Inverted navbar
-@navbarInverseBackground:                #111111;
-@navbarInverseBackgroundHighlight:       #222222;
-@navbarInverseBorder:                    #252525;
+@navbarInverseBackground:                @white;
+@navbarInverseBackgroundHighlight:       @grayLighter;
+@navbarInverseBorder:                    @navbarBorder;
 
 @navbarInverseText:                      @grayLight;
 @navbarInverseLinkColor:                 @grayLight;
 @navbarInverseLinkColorHover:            @white;
-@navbarInverseLinkColorActive:           @navbarInverseLinkColorHover;
+@navbarInverseLinkColorActive:           @white;
 @navbarInverseLinkBackgroundHover:       transparent;
-@navbarInverseLinkBackgroundActive:      @navbarInverseBackground;
+@navbarInverseLinkBackgroundActive:      transparent;
 
-@navbarInverseSearchBackground:          lighten(@navbarInverseBackground, 25%);
+@navbarInverseSearchBackground:          @white; //lighten(@navbarInverseBackground, 25%);
 @navbarInverseSearchBackgroundFocus:     @white;
 @navbarInverseSearchBorder:              @navbarInverseBackground;
 @navbarInverseSearchPlaceholderColor:    #ccc;

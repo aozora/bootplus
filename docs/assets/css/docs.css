@@ -55,6 +55,8 @@ body > .navbar .brand:hover {
 /* padding for in-page bookmarks and fixed navbar */
 section {
    margin-top: 30px;
+   margin-left: -20px;
+   margin-right: -20px;
    padding-top: 30px;
    padding: 19px;
 
