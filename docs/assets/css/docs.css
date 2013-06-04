@@ -108,7 +108,7 @@ hr.soften {
   padding: 40px 0;
   /*color: #fff;*/
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.075);
   background: #d9d9d9;
   background-image: none;
   -webkit-box-shadow: none;
@@ -945,7 +945,7 @@ separator
 
   /* Widen masthead and social buttons to fill body padding */
   .jumbotron {
-    padding: 40px 20px;
+    padding: 0 20px 40px 20px;
     margin-top:   -20px; /* Offset bottom margin on .navbar */
     margin-right: -20px;
     margin-left:  -20px;
@@ -1005,7 +1005,14 @@ separator
     display: block;
   }
 
-  /* Downsize the jumbotrons */
+   .jumbotron:after {
+      background-image: none;
+   }
+   .jumbotron {
+      padding-top: 0;
+   }
+
+   /* Downsize the jumbotrons */
   .jumbotron h1 {
     font-size: 45px;
   }

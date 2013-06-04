@@ -23,10 +23,11 @@ build:
 	@printf "Compiling LESS with Recess..."
 	@recess --compile ${BOOTPLUS_LESS} > ${BOOTPLUS}
 	@recess --compile ${BOOTPLUS_RESPONSIVE_LESS} > ${BOOTPLUS_RESPONSIVE}
+	@recess --compile ./less/fontawesome/font-awesome-ie7.less > ./docs/assets/css/bootplus-ie7.css
 	@echo "             ${CHECK}"
 	@printf "Prepping documentation assets..."
 	@node docs/build
-	@cp img/* docs/assets/img/
+#	@cp img/* docs/assets/img/
 	@cp js/*.js docs/assets/js/
 	@cp js/tests/vendor/jquery.js docs/assets/js/
 	@echo "             ${CHECK}"
@@ -66,7 +67,7 @@ clean:
 # recess & uglifyjs are required
 #
 
-bootplus: bootplus-img bootplus-css bootplus-js
+bootplus: bootplus-css bootplus-js
 
 
 #
@@ -94,16 +95,18 @@ bootplus/css/*.css: less/*.less
 	./node_modules/.bin/recess --compress ${BOOTPLUS_LESS} > bootplus/css/bootplus.min.css
 	./node_modules/.bin/recess --compile ${BOOTPLUS_RESPONSIVE_LESS} > bootplus/css/bootplus-responsive.css
 	./node_modules/.bin/recess --compress ${BOOTPLUS_RESPONSIVE_LESS} > bootplus/css/bootplus-responsive.min.css
+	./node_modules/.bin/recess --compile ./less/fontawesome/font-awesome-ie7.less > bootplus/css/bootplus-ie7.css
+	./node_modules/.bin/recess --compress ./less/fontawesome/font-awesome-ie7.less > bootplus/css/bootplus-ie7.min.css
 
 #
 # IMAGES
 #
-
-bootplus-img: bootplus/img/*
-
-bootplus/img/*: img/*
-	mkdir -p bootplus/img
-	cp img/* bootplus/img/
+#
+#bootplus-img: bootplus/img/*
+#
+#bootplus/img/*: img/*
+#	mkdir -p bootplus/img
+#	cp img/* bootplus/img/
 
 
 #
@@ -128,4 +131,4 @@ watch:
 	watchr -e "watch('less/.*\.less') { system 'make' }"
 
 
-.PHONY: docs watch gh-pages bootplus-img bootplus-css bootplus-js
+.PHONY: docs watch gh-pages bootplus-css bootplus-js

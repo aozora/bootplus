@@ -63,6 +63,10 @@
   ├── css/
   │   ├── bootplus.css
   │   ├── bootplus.min.css
+  │   ├── bootplus-responsive.css
+  │   ├── bootplus-responsive.min.css
+  │   ├── bootplus-ie7.css
+  │   ├── bootplus-ie7.min.css
   ├── font/
   │   ├── fontawesome-webfont.eot
   │   ├── fontawesome-webfont.svg
@@ -148,7 +152,7 @@
   &lt;/body&gt;
 &lt;/html&gt;
 </pre>
-          <p>{{_i}}To make this <strong>a Bootstrapped template</strong>, just include the appropriate CSS and JS files:{{/i}}</p>
+          <p>{{_i}}To make this <strong>a Bootplus template</strong>, just include the appropriate CSS and JS files:{{/i}}</p>
 <pre class="prettyprint linenums">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -157,6 +161,10 @@
     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
     &lt;!-- Bootplus --&gt;
     &lt;link href="css/bootplus.min.css" rel="stylesheet" media="screen"&gt;
+    &lt;link href="css/bootplus-responsive.min.css" rel="stylesheet" media="screen"&gt;
+    &lt;!--[if IE 7]&gt;
+    &lt;link rel="stylesheet" href="css/bootplus-ie7.min.css"&gt;
+    &lt;![endif]--&gt;
   &lt;/head&gt;
   &lt;body&gt;
     &lt;h1&gt;Hello, world!&lt;/h1&gt;
@@ -165,6 +173,8 @@
   &lt;/body&gt;
 &lt;/html&gt;
 </pre>
+          <p>{{_i}}<span class="label label-info">Note!</span> <strong>bootplus-responsive.min.css</strong> is required only if you want your site to be responsive through many devices adapting its content.{{/i}}</p>
+          <p>{{_i}}<span class="label label-info">Note!</span> <strong>bootplus-ie7.min.css</strong> is optional, it is required only if you want to use make the Font-Awesome icons comaptibles with old browser (IE7-8).{{/i}}</p>
           <p>{{_i}}<strong>And you're set!</strong> With those two files added, you can begin to develop any site or application with Bootplus.{{/i}}</p>
         </section>
 
