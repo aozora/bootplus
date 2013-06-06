@@ -1,35 +1,76 @@
-<?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-   <url>
-      <loc>http://aozora.github.io/bootplus/</loc>
-      <changefreq>weekly</changefreq>
-   </url>
-   <url>
-      <loc>http://aozora.github.io/bootplus/index.html</loc>
-      <changefreq>weekly</changefreq>
-   </url>
-   <url>
-      <loc>http://aozora.github.io/bootplus/getting-started.html</loc>
-      <changefreq>weekly</changefreq>
-   </url>
-   <url>
-      <loc>http://aozora.github.io/bootplus/scaffolding.html</loc>
-      <changefreq>weekly</changefreq>
-   </url>
-   <url>
-      <loc>http://aozora.github.io/bootplus/base-css.html</loc>
-      <changefreq>weekly</changefreq>
-   </url>
-   <url>
-      <loc>http://aozora.github.io/bootplus/components.html</loc>
-      <changefreq>weekly</changefreq>
-   </url>
-   <url>
-      <loc>http://aozora.github.io/bootplus/plus.html</loc>
-      <changefreq>weekly</changefreq>
-   </url>
-   <url>
-      <loc>http://aozora.github.io/bootplus/javascript.html</loc>
-      <changefreq>weekly</changefreq>
-   </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://aozora.github.io/bootplus/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://aozora.github.io/bootplus/index.html</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://aozora.github.io/bootplus/getting-started.html</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://aozora.github.io/bootplus/scaffolding.html</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://aozora.github.io/bootplus/base-css.html</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://aozora.github.io/bootplus/components.html</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://aozora.github.io/bootplus/plus.html</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://aozora.github.io/bootplus/javascript.html</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://aozora.github.io/bootplus/examples/starter-template.html</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://aozora.github.io/bootplus/examples/hero.html</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://aozora.github.io/bootplus/examples/fluid.html</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://aozora.github.io/bootplus/examples/marketing-narrow.html</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://aozora.github.io/bootplus/examples/justified-nav.html</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://aozora.github.io/bootplus/examples/signin.html</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://aozora.github.io/bootplus/examples/sticky-footer.html</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://aozora.github.io/bootplus/examples/carousel.html</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://aozora.github.io/bootplus/examples/sticky-footer-navbar.html</loc>
+  <changefreq>weekly</changefreq>
+</url>
 </urlset>
