@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>http://aozora.github.com/bootplus/</loc>
+      <changefreq>weekly</changefreq>
+   </url>
+   <url>
+      <loc>http://aozora.github.com/bootplus/index.html</loc>
+      <changefreq>weekly</changefreq>
+   </url>
+   <url>
+      <loc>http://aozora.github.com/bootplus/getting-started.html</loc>
+      <changefreq>weekly</changefreq>
+   </url>
+   <url>
+      <loc>http://aozora.github.com/bootplus/scaffolding.html</loc>
+      <changefreq>weekly</changefreq>
+   </url>
+   <url>
+      <loc>http://aozora.github.com/bootplus/base-css.html</loc>
+      <changefreq>weekly</changefreq>
+   </url>
+   <url>
+      <loc>http://aozora.github.com/bootplus/components.html</loc>
+      <changefreq>weekly</changefreq>
+   </url>
+   <url>
+      <loc>http://aozora.github.com/bootplus/plus.html</loc>
+      <changefreq>weekly</changefreq>
+   </url>
+   <url>
+      <loc>http://aozora.github.com/bootplus/javascript.html</loc>
+      <changefreq>weekly</changefreq>
+   </url>
+</urlset>
