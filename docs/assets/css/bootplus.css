@@ -4380,8 +4380,13 @@ a.btn-large {
 }
 
 .btn-mini {
-  padding: 0 6px;
+  width: auto;
+  height: 20px;
+  min-width: 10px;
+  min-height: 20px;
+  padding: 0 4px;
   font-size: 9.75px;
+  line-height: 20px;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
@@ -6190,7 +6195,7 @@ input[type="submit"].btn.btn-mini {
 
 .pagination-mini ul > li > a,
 .pagination-mini ul > li > span {
-  padding: 0 6px;
+  padding: 0 4px;
   font-size: 9.75px;
 }
 
