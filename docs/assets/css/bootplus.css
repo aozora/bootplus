@@ -7305,6 +7305,22 @@ input[type="color"]:hover,
           box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+.input-append .add-on,
+.input-prepend .add-on {
+  min-height: 29px;
+  padding: 0 8px;
+  line-height: 29px;
+  text-shadow: none;
+  border: 1px solid #c0c0c0;
+}
+
+.input-append .btn,
+.input-prepend .btn {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
 input.search-query {
   padding: 0 8px;
   -webkit-border-radius: 1px;
@@ -7351,6 +7367,30 @@ input.search-query {
 .form-search > .btn[type="submit"] .caret {
   border-top-color: #ffffff;
   border-bottom-color: #ffffff;
+}
+
+.form-search .input-append .search-query {
+  -webkit-border-radius: 1px 0 0 1px;
+     -moz-border-radius: 1px 0 0 1px;
+          border-radius: 1px 0 0 1px;
+}
+
+.form-search .input-append .btn {
+  -webkit-border-radius: 0 1px 1px 0;
+     -moz-border-radius: 0 1px 1px 0;
+          border-radius: 0 1px 1px 0;
+}
+
+.form-search .input-prepend .search-query {
+  -webkit-border-radius: 0 1px 1px 0;
+     -moz-border-radius: 0 1px 1px 0;
+          border-radius: 0 1px 1px 0;
+}
+
+.form-search .input-prepend .btn {
+  -webkit-border-radius: 1px 0 0 1px;
+     -moz-border-radius: 1px 0 0 1px;
+          border-radius: 1px 0 0 1px;
 }
 
 .btn-group > .btn,

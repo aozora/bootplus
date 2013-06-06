@@ -35,6 +35,29 @@ input[type="color"],
 
 
 
+// INPUT GROUPS
+// ------------
+.input-append,
+.input-prepend {
+   .add-on {
+      padding: 0 8px;
+      text-shadow: none;
+      border: 1px solid #c0c0c0;
+      min-height: 29px;
+      line-height: 29px;
+   }
+
+   .btn {
+      // fix height with the append/prepend input
+      .box-sizing(content-box);
+   }
+}
+
+
+
+
+// SEARCH FORM
+// -----------
 
 input.search-query {
    padding: 0 8px;
@@ -46,4 +69,18 @@ input.search-query {
    .btn-primary;
    padding: 0 24px;
    margin: 0 15px;
+}
+
+
+.form-search .input-append .search-query {
+   .border-radius(@inputBorderRadius 0 0 @inputBorderRadius);
+}
+.form-search .input-append .btn {
+   .border-radius(0 @inputBorderRadius @inputBorderRadius 0);
+}
+.form-search .input-prepend .search-query {
+   .border-radius(0 @inputBorderRadius @inputBorderRadius 0);
+}
+.form-search .input-prepend .btn {
+   .border-radius(@inputBorderRadius 0 0 @inputBorderRadius);
 }
