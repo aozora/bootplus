@@ -1,7 +1,7 @@
 {
     "name": "bootplus"
   ,"description": "simple and flexible web framework to create elegant and modern web applications with the same look & feel of Google+ "
-  , "version": "1.0.0"
+  , "version": "1.0.1"
   , "keywords": ["bootstrap", "css", "plus", "google", "google+"]
   , "homepage": "http://aozora.github.com/bootplus/"
   , "author": "Marcello Palmitessa"
