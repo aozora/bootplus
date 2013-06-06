@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
-      <loc>http://aozora.github.com/bootplus/</loc>
+      <loc>http://aozora.github.io/bootplus/</loc>
       <changefreq>weekly</changefreq>
    </url>
    <url>
-      <loc>http://aozora.github.com/bootplus/index.html</loc>
+      <loc>http://aozora.github.io/bootplus/index.html</loc>
       <changefreq>weekly</changefreq>
    </url>
    <url>
-      <loc>http://aozora.github.com/bootplus/getting-started.html</loc>
+      <loc>http://aozora.github.io/bootplus/getting-started.html</loc>
       <changefreq>weekly</changefreq>
    </url>
    <url>
-      <loc>http://aozora.github.com/bootplus/scaffolding.html</loc>
+      <loc>http://aozora.github.io/bootplus/scaffolding.html</loc>
       <changefreq>weekly</changefreq>
    </url>
    <url>
-      <loc>http://aozora.github.com/bootplus/base-css.html</loc>
+      <loc>http://aozora.github.io/bootplus/base-css.html</loc>
       <changefreq>weekly</changefreq>
    </url>
    <url>
-      <loc>http://aozora.github.com/bootplus/components.html</loc>
+      <loc>http://aozora.github.io/bootplus/components.html</loc>
       <changefreq>weekly</changefreq>
    </url>
    <url>
-      <loc>http://aozora.github.com/bootplus/plus.html</loc>
+      <loc>http://aozora.github.io/bootplus/plus.html</loc>
       <changefreq>weekly</changefreq>
    </url>
    <url>
-      <loc>http://aozora.github.com/bootplus/javascript.html</loc>
+      <loc>http://aozora.github.io/bootplus/javascript.html</loc>
       <changefreq>weekly</changefreq>
    </url>
 </urlset>
