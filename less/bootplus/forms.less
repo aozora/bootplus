@@ -53,7 +53,9 @@ input[type="color"],
    }
 }
 
-
+.uneditable-input {
+  line-height: 29px;
+}
 
 
 // SEARCH FORM
@@ -83,4 +85,35 @@ input.search-query {
 }
 .form-search .input-prepend .btn {
    .border-radius(@inputBorderRadius 0 0 @inputBorderRadius);
+}
+
+
+
+// FIX FORM FIELD FEEDBACK STATES
+// --------------------------
+//.formFieldState(@textColor: #555, @borderColor: #ccc, @backgroundColor: #f5f5f5)
+//// Warning
+//.control-group.warning {
+//  .formFieldState(@warningText, @warningText, @warningBackground);
+//}
+// Error
+.control-group.error {
+  .formFieldState(@errorBackground, @errorBackground, @errorBackground);
+}
+// Success
+.control-group.success {
+  .formFieldState(@successBackground, @successBackground, @successBackground);
+}
+// Success
+.control-group.info {
+  .formFieldState(@infoBackground, @infoBackground, @infoBackground);
+}
+
+
+
+// FORM ACTIONS
+// ------------
+
+.form-actions {
+  border-top: 0;
 }
