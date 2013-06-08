@@ -1,7 +1,7 @@
 ## v1.0.2
 - fixed Validation states (Forms)
 - Fixed Issue #4 "Button rework .."
-
+- added bootstrap version in the header of .css
 
 ## v1.0.1
 - Fixed Issue #1: appended/prepended not aligned with input
