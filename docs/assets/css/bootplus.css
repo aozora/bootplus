@@ -7541,13 +7541,13 @@ input.search-query {
   font-weight: normal;
 }
 
-.btn .caret {
-  margin-top: 0;
-}
-
 .btn-group > .btn + .dropdown-toggle {
   width: 20px;
   min-width: 20px;
+}
+
+.btn.dropdown-toggle .caret {
+  margin-top: 0;
 }
 
 .alert {
