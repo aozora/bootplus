@@ -832,14 +832,14 @@ form.bs-docs-example {
           box-shadow: none;*/
 }
 /* Chevrons */
-.bs-docs-sidenav .icon-chevron-right {
-   display: none;
-   background-image: none;
+/*.bs-docs-sidenav .icon-chevron-right {*/
+   /*display: none;*/
+   /*background-image: none;*/
   /*float: right;*/
   /*margin-top: 2px;*/
   /*margin-right: -6px;*/
   /*opacity: .25;*/
-}
+/*}*/
 /*.bs-docs-sidenav > li > a:hover {
    color: #262626;
    background-color: #F5F5F5;

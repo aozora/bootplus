@@ -4,6 +4,7 @@
  * Copyright 2013 Marcello Palmitessa
  * Licensed under the Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0) or the GPL v2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
  *
+ * based on Twitter Bootstrap v2.3.2
  */
 
 .clearfix {
@@ -2499,6 +2500,13 @@ ul.icons-ul > li .icon-li {
 
 /* keeps Bootstrap styles with and without icons the same */
 
+.btn [class^="icon-"],
+.nav [class^="icon-"],
+.btn [class*=" icon-"],
+.nav [class*=" icon-"] {
+  line-height: 29px;
+}
+
 .btn [class^="icon-"].icon-large,
 .nav [class^="icon-"].icon-large,
 .btn [class*=" icon-"].icon-large,
@@ -2534,6 +2542,11 @@ ul.icons-ul > li .icon-li {
 .btn [class^="icon-"].icon-spin.icon-large,
 .btn [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
+}
+
+.btn.btn-mini [class^="icon-"],
+.btn.btn-mini [class*=" icon-"] {
+  line-height: 20px;
 }
 
 .btn.btn-small [class^="icon-"].pull-left.icon-2x,
@@ -4241,7 +4254,6 @@ button.close {
   display: inline-block;
   *display: inline;
   height: 29px;
-  min-width: 46px;
   min-height: 29px;
   padding: 0 8px;
   margin: 0;
@@ -4249,7 +4261,7 @@ button.close {
   font-size: 13px;
   font-weight: 400;
   font-weight: bold;
-  line-height: 29px;
+  line-height: 1;
   color: #444444;
   text-align: center;
   text-shadow: none;
@@ -4380,8 +4392,13 @@ a.btn-large {
 }
 
 .btn-mini {
-  padding: 0 6px;
+  width: auto;
+  height: 20px;
+  min-width: 10px;
+  min-height: 20px;
+  padding: 0 4px;
   font-size: 9.75px;
+  line-height: 20px;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
@@ -6190,7 +6207,7 @@ input[type="submit"].btn.btn-mini {
 
 .pagination-mini ul > li > a,
 .pagination-mini ul > li > span {
-  padding: 0 6px;
+  padding: 0 4px;
   font-size: 9.75px;
 }
 
@@ -7321,6 +7338,10 @@ input[type="color"]:hover,
           box-sizing: content-box;
 }
 
+.uneditable-input {
+  line-height: 29px;
+}
+
 input.search-query {
   padding: 0 8px;
   -webkit-border-radius: 1px;
@@ -7393,19 +7414,140 @@ input.search-query {
           border-radius: 1px 0 0 1px;
 }
 
+.control-group.error .control-label,
+.control-group.error .help-block,
+.control-group.error .help-inline {
+  color: #dd4b39;
+}
+
+.control-group.error .checkbox,
+.control-group.error .radio,
+.control-group.error input,
+.control-group.error select,
+.control-group.error textarea {
+  color: #dd4b39;
+}
+
+.control-group.error input,
+.control-group.error select,
+.control-group.error textarea {
+  border-color: #dd4b39;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.control-group.error input:focus,
+.control-group.error select:focus,
+.control-group.error textarea:focus {
+  border-color: #c23321;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ec9a90;
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ec9a90;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ec9a90;
+}
+
+.control-group.error .input-prepend .add-on,
+.control-group.error .input-append .add-on {
+  color: #dd4b39;
+  background-color: #dd4b39;
+  border-color: #dd4b39;
+}
+
+.control-group.success .control-label,
+.control-group.success .help-block,
+.control-group.success .help-inline {
+  color: #3d9400;
+}
+
+.control-group.success .checkbox,
+.control-group.success .radio,
+.control-group.success input,
+.control-group.success select,
+.control-group.success textarea {
+  color: #3d9400;
+}
+
+.control-group.success input,
+.control-group.success select,
+.control-group.success textarea {
+  border-color: #3d9400;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.control-group.success input:focus,
+.control-group.success select:focus,
+.control-group.success textarea:focus {
+  border-color: #286100;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67fa00;
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67fa00;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67fa00;
+}
+
+.control-group.success .input-prepend .add-on,
+.control-group.success .input-append .add-on {
+  color: #3d9400;
+  background-color: #3d9400;
+  border-color: #3d9400;
+}
+
+.control-group.info .control-label,
+.control-group.info .help-block,
+.control-group.info .help-inline {
+  color: #5bc0de;
+}
+
+.control-group.info .checkbox,
+.control-group.info .radio,
+.control-group.info input,
+.control-group.info select,
+.control-group.info textarea {
+  color: #5bc0de;
+}
+
+.control-group.info input,
+.control-group.info select,
+.control-group.info textarea {
+  border-color: #5bc0de;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.control-group.info input:focus,
+.control-group.info select:focus,
+.control-group.info textarea:focus {
+  border-color: #31b0d5;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #b0e1ef;
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #b0e1ef;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #b0e1ef;
+}
+
+.control-group.info .input-prepend .add-on,
+.control-group.info .input-append .add-on {
+  color: #5bc0de;
+  background-color: #5bc0de;
+  border-color: #5bc0de;
+}
+
+.form-actions {
+  border-top: 0;
+}
+
 .btn-group > .btn,
 .btn-group > .dropdown-menu,
 .btn-group > .popover {
   font-weight: normal;
 }
 
-.btn .caret {
-  margin-top: 0;
-}
-
 .btn-group > .btn + .dropdown-toggle {
   width: 20px;
   min-width: 20px;
+}
+
+.btn.dropdown-toggle .caret {
+  margin-top: 0;
 }
 
 .alert {
@@ -8276,11 +8418,8 @@ input.search-query {
 }
 
 .card.hovercard .bottom {
+  padding: 0 20px;
   margin-bottom: 17px;
-}
-
-.card.hovercard .bottom .btn {
-  width: 85px;
 }
 
 .hero-unit {
