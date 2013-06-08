@@ -23,7 +23,6 @@ build:
 	@printf "Compiling LESS with Recess..."
 	@recess --compile ${BOOTPLUS_LESS} > ${BOOTPLUS}
 	@recess --compile ${BOOTPLUS_RESPONSIVE_LESS} > ${BOOTPLUS_RESPONSIVE}
-	@recess --compile ./less/fontawesome/font-awesome-ie7.less > ./docs/assets/css/bootplus-ie7.css
 	@echo "             ${CHECK}"
 	@printf "Prepping documentation assets..."
 	@node docs/build
@@ -95,8 +94,6 @@ bootplus/css/*.css: less/*.less
 	./node_modules/.bin/recess --compress ${BOOTPLUS_LESS} > bootplus/css/bootplus.min.css
 	./node_modules/.bin/recess --compile ${BOOTPLUS_RESPONSIVE_LESS} > bootplus/css/bootplus-responsive.css
 	./node_modules/.bin/recess --compress ${BOOTPLUS_RESPONSIVE_LESS} > bootplus/css/bootplus-responsive.min.css
-	./node_modules/.bin/recess --compile ./less/fontawesome/font-awesome-ie7.less > bootplus/css/bootplus-ie7.css
-	./node_modules/.bin/recess --compress ./less/fontawesome/font-awesome-ie7.less > bootplus/css/bootplus-ie7.min.css
 
 #
 # IMAGES
