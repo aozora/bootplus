@@ -8418,11 +8418,8 @@ input.search-query {
 }
 
 .card.hovercard .bottom {
+  padding: 0 20px;
   margin-bottom: 17px;
-}
-
-.card.hovercard .bottom .btn {
-  width: 85px;
 }
 
 .hero-unit {

@@ -37,6 +37,19 @@
                     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
                                    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
+      <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-3182578-9']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+      </script>
   </head>
 
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -98,11 +111,11 @@
     <div class="row">
       <div class="span3 bs-docs-sidebar">
         <ul class="nav nav-list bs-docs-sidenav">
-          <li><a href="#download-bootplus"><i class="icon-chevron-right"></i> Download</a></li>
-          <li><a href="#file-structure"><i class="icon-chevron-right"></i> File structure</a></li>
-          <li><a href="#contents"><i class="icon-chevron-right"></i> What's included</a></li>
-          <li><a href="#html-template"><i class="icon-chevron-right"></i> HTML template</a></li>
-          <li><a href="#examples"><i class="icon-chevron-right"></i> Examples</a></li>
+          <li><a href="#download-bootplus"> Download</a></li>
+          <li><a href="#file-structure"> File structure</a></li>
+          <li><a href="#contents"> What's included</a></li>
+          <li><a href="#html-template"> HTML template</a></li>
+          <li><a href="#examples"> Examples</a></li>
         </ul>
       </div>
       <div class="span9">
@@ -121,12 +134,12 @@
             <div class="span6">
               <h2>Download compiled</h2>
               <p><strong>Fastest way to get started:</strong> get the compiled and minified versions of our CSS, JS, and images. No docs or original source files.</p>
-              <p><a class="btn btn-large btn-primary" href="assets/bootplus.zip" >Download Bootplus</a></p>
+              <p><a class="btn btn-large btn-primary" href="assets/bootplus.zip" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download compiled']);">Download Bootplus</a></p>
             </div>
             <div class="span6">
               <h2>Download source</h2>
               <p>Get the original files for all CSS and JavaScript, along with a local copy of the docs by downloading the latest version directly from GitHub.</p>
-              <p><a class="btn btn-large" href="https://github.com/twitter/bootplus/zipball/master" >Download Bootplus source</a></p>
+              <p><a class="btn btn-large" href="https://github.com/twitter/bootplus/zipball/master" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download source']);">Download Bootplus source</a></p>
             </div>
           </div>
         </section>
@@ -381,6 +394,21 @@
     <script src="assets/js/application.js"></script>
 
 
+    <!-- Analytics
+    ================================================== -->
+    <script>
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '4f0dc9fef5a1f55508000013');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
 
   </body>
 </html>
