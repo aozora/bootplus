@@ -49,7 +49,7 @@
 
           {{! Body copy }}
           <h2 id="body-copy">{{_i}}Body copy{{/i}}</h2>
-          <p>{{_i}}Bootstrap's global default <code>font-size</code> is <strong>14px</strong>, with a <code>line-height</code> of <strong>20px</strong>. This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of half their line-height (10px by default).{{/i}}</p>
+          <p>{{_i}}Bootplus's global default <code>font-size</code> is <strong>14px</strong>, with a <code>line-height</code> of <strong>20px</strong>. This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of half their line-height (10px by default).{{/i}}</p>
           <div class="bs-docs-example">
             <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
             <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
@@ -67,7 +67,7 @@
 
           {{! Using LESS }}
           <h3>{{_i}}Built with Less{{/i}}</h3>
-          <p>{{_i}}The typographic scale is based on two LESS variables in <strong>variables.less</strong>: <code>@baseFontSize</code> and <code>@baseLineHeight</code>. The first is the base font-size used throughout and the second is the base line-height. We use those variables and some simple math to create the margins, paddings, and line-heights of all our type and more. Customize them and Bootstrap adapts.{{/i}}</p>
+          <p>{{_i}}The typographic scale is based on two LESS variables in <strong>variables.less</strong>: <code>@baseFontSize</code> and <code>@baseLineHeight</code>. The first is the base font-size used throughout and the second is the base line-height. We use those variables and some simple math to create the margins, paddings, and line-heights of all our type and more. Customize them and Bootplus adapts.{{/i}}</p>
 
 
           <hr class="bs-docs-separator">
@@ -870,7 +870,7 @@
 
 
           <h2>{{_i}}Optional layouts{{/i}}</h2>
-          <p>{{_i}}Included with Bootstrap are three optional form layouts for common use cases.{{/i}}</p>
+          <p>{{_i}}Included with Bootplus are three optional form layouts for common use cases.{{/i}}</p>
 
           <h3>{{_i}}Search form{{/i}}</h3>
           <p>{{_i}}Add <code>.form-search</code> to the form and <code>.search-query</code> to the <code>&lt;input&gt;</code> for an extra-rounded text input.{{/i}}</p>
@@ -1092,7 +1092,7 @@
 
 
           <h2>{{_i}}Extending form controls{{/i}}</h2>
-          <p>{{_i}}Adding on top of existing browser controls, Bootstrap includes other useful form components.{{/i}}</p>
+          <p>{{_i}}Adding on top of existing browser controls, Bootplus includes other useful form components.{{/i}}</p>
 
           <h3>{{_i}}Prepended and appended inputs{{/i}}</h3>
           <p>{{_i}}Add text or buttons before or after any text-based input. Do note that <code>select</code> elements are not supported here.{{/i}}</p>
@@ -1544,7 +1544,7 @@
 </pre>
 
           <h3>{{_i}}Validation states{{/i}}</h3>
-          <p>{{_i}}Bootstrap includes validation styles for error, warning, info, and success messages. To use, add the appropriate class to the surrounding <code>.control-group</code>.{{/i}}</p>
+          <p>{{_i}}Bootplus includes validation styles for error, warning, info, and success messages. To use, add the appropriate class to the surrounding <code>.control-group</code>.{{/i}}</p>
 
           <form class="bs-docs-example form-horizontal">
             <div class="control-group warning">
@@ -1819,6 +1819,22 @@
 
 
           <h2>{{_i}}How to use{{/i}}</h2>
+          <p>First you need to include <code>font-awesome.min.css</code> and optionally, if you want to support IE7, also add <code>font-awesome-ie7.min.css</code>.</p>
+          <p>The Font-Awesome css file by default points to the fonts files in the <code>assets\font</code> path. If by chance you put the font files in a different structure, you need to add the following snippet in the <code>head</code> section right after the <code>font-awesome.min.css</code>:</p>
+<pre class="prettyprint linenums">
+&lt;style type="text/css"&gt;
+   @font-face {
+      font-family: 'FontAwesome';
+      src: url('put-here-your-path/font/fontawesome-webfont.eot")?v=3.1.1');
+      src: url('put-here-your-path/font/fontawesome-webfont.eot")?#iefix&v=3.1.1') format('embedded-opentype'),
+      url('put-here-your-path/font/fontawesome-webfont.woff")?v=3.1.1') format('woff'),
+      url('put-here-your-path/font/fontawesome-webfont.ttf")?v=3.1.1') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+   }
+&lt;/style&gt;
+</pre>
+
           <p>{{_i}}All icons require an <code>&lt;i&gt;</code> tag with a unique class, prefixed with <code>icon-</code>. To use, place the following code just about anywhere:{{/i}}</p>
 <pre class="prettyprint linenums">
 &lt;i class="icon-search"&gt;&lt;/i&gt;

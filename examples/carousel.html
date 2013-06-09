@@ -11,9 +11,23 @@
 
       <!-- Le styles -->
       <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+      <!--[if IE 7]>
+      <link rel="stylesheet" href="../assets/css/font-awesome-ie7.min.css">
+      <![endif]-->
       <link href="../assets/css/bootplus.css" rel="stylesheet">
       <link href="../assets/css/bootplus-responsive.css" rel="stylesheet">
     <style>
+      /* Fix font-awesome path  */
+      @font-face {
+         font-family: 'FontAwesome';
+         src: url('../assets/font/fontawesome-webfont.eot")?v=3.1.1');
+         src: url('../assets/font/fontawesome-webfont.eot")?#iefix&v=3.1.1') format('embedded-opentype'),
+         url('../assets/font/fontawesome-webfont.woff")?v=3.1.1') format('woff'),
+         url('../assets/font/fontawesome-webfont.ttf")?v=3.1.1') format('truetype');
+         font-weight: normal;
+         font-style: normal;
+      }
 
     /* GLOBAL STYLES
     -------------------------------------------------- */
@@ -21,7 +35,7 @@
 
     body {
       padding-bottom: 40px;
-      color: #5a5a5a;
+      /*color: #5a5a5a;*/
     }
 
 
@@ -39,24 +53,24 @@
       margin-top: 20px;
       margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
     }
-    .navbar-wrapper .navbar {
+    /*.navbar-wrapper .navbar {*/
 
-    }
+    /*}*/
 
     /* Remove border and change up box shadow for more contrast */
-    .navbar .navbar-inner {
-      border: 0;
-      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-              box-shadow: 0 2px 10px rgba(0,0,0,.25);
-    }
+    /*.navbar .navbar-inner {*/
+      /*border: 0;*/
+      /*-webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);*/
+         /*-moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);*/
+              /*box-shadow: 0 2px 10px rgba(0,0,0,.25);*/
+    /*}*/
 
     /* Downsize the brand/project name a bit */
     .navbar .brand {
       padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
       font-size: 16px;
       font-weight: bold;
-      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+      /*text-shadow: 0 -1px 0 rgba(0,0,0,.5);*/
     }
 
     /* Navbar links: increase padding for taller navbar */
@@ -367,22 +381,28 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="span4">
-          <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+           <div class="well">
+             <img class="img-circle" data-src="holder.js/140x140">
+             <h2>Heading</h2>
+             <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+             <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+           </div>
         </div><!-- /.span4 -->
         <div class="span4">
-          <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+           <div class="well">
+             <img class="img-circle" data-src="holder.js/140x140">
+             <h2>Heading</h2>
+             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+             <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+           </div>
         </div><!-- /.span4 -->
         <div class="span4">
-          <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+           <div class="well">
+             <img class="img-circle" data-src="holder.js/140x140">
+             <h2>Heading</h2>
+             <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+             <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+           </div>
         </div><!-- /.span4 -->
       </div><!-- /.row -->
 

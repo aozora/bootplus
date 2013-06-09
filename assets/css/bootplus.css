@@ -1,5 +1,5 @@
 /*!
- * Bootplus v1.0.1
+ * Bootplus v1.0.2
  *
  * Copyright 2013 Marcello Palmitessa
  * Licensed under the Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0) or the GPL v2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
@@ -4275,7 +4275,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .nav > li > a:hover,
 .navbar-inverse .brand:focus,
 .navbar-inverse .nav > li > a:focus {
-  color: #ffffff;
+  color: #262626;
 }
 
 .navbar-inverse .brand {
@@ -4288,7 +4288,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-inverse .nav > li > a:focus,
 .navbar-inverse .nav > li > a:hover {
-  color: #ffffff;
+  color: #262626;
   background-color: transparent;
 }
 
@@ -4305,7 +4305,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-inverse .navbar-link:hover,
 .navbar-inverse .navbar-link:focus {
-  color: #ffffff;
+  color: #262626;
 }
 
 .navbar-inverse .divider-vertical {
@@ -6258,6 +6258,11 @@ input.search-query {
 .navbar-inverse .brand,
 .navbar-inverse .nav > li > a {
   text-shadow: none;
+}
+
+.navbar-inverse .brand:hover,
+.navbar-inverse .brand:focus {
+  color: #262626;
 }
 
 .navbar-inverse .navbar-search .search-query {
