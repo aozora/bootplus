@@ -94,6 +94,7 @@ bootplus/css/*.css: less/*.less
 	./node_modules/.bin/recess --compress ${BOOTPLUS_LESS} > bootplus/css/bootplus.min.css
 	./node_modules/.bin/recess --compile ${BOOTPLUS_RESPONSIVE_LESS} > bootplus/css/bootplus-responsive.css
 	./node_modules/.bin/recess --compress ${BOOTPLUS_RESPONSIVE_LESS} > bootplus/css/bootplus-responsive.min.css
+	cp docs/assets/css/font-awesome*.* bootplus/css/
 
 #
 # IMAGES
@@ -114,7 +115,7 @@ gh-pages: bootplus docs
 	rm -f docs/assets/bootplus.zip
 	zip -r docs/assets/bootplus.zip bootplus
 	rm -r bootplus
-	#rm -f ../bootplus-gh-pages/assets/bootplus.zip
+	rm -f ../bootplus-gh-pages/assets/bootplus.zip
 	mkdir -p ../bootplus-gh-pages
 	node docs/build production
 	cp -r docs/* ../bootplus-gh-pages
