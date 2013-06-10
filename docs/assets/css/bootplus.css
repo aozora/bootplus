@@ -6005,6 +6005,29 @@ input.search-query {
   content: "\F106";
 }
 
+.dropdown-menu.notifications {
+  width: auto;
+  min-width: 320px;
+  overflow-y: auto;
+}
+
+.dropdown-menu.notifications > li {
+  padding: 15px;
+  background-color: #F0F0F0;
+  border-top: 1px solid #d0d0d0;
+}
+
+.dropdown-menu.notifications > li .title {
+  display: block;
+  height: 17px;
+  margin: 0 0 12px 0;
+  overflow: hidden;
+  font-size: 13px;
+  color: #737373;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .nav-list {
   background-color: #f5f5f5;
   border: 1px solid #d8d8d8;
@@ -6288,6 +6311,15 @@ input.search-query {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
      -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav > li > a.btn {
+  padding: 0 8px;
+  margin-top: 13px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 29px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .modal-backdrop {

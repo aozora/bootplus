@@ -20,6 +20,7 @@
           <li><a href="#cards-news"> {{_i}}News Cards{{/i}}</a></li>
           <li><a href="#cards-people"> {{_i}}People Cards{{/i}}</a></li>
           <li><a href="#cards-hovercard"> {{_i}}People Hover Cards{{/i}}</a></li>
+          <li><a href="#navbar-notification"> {{_i}}Navbar Notifications{{/i}}</a></li>
         </ul>
       </div>
       <div class="span9">
@@ -287,6 +288,63 @@
 &lt;/div&gt;
 </pre>
         </section>
+
+
+
+         <section id="navbar-notification">
+          <h2>{{_i}}Navbar Notifications{{/i}}</h2>
+          <p>{{_i}}{{/i}}</p>
+          <div class="bs-docs-example" style="background-color: #E5E5E5">
+            <div class="navbar" style="position: static;">
+              <div class="navbar-inner">
+                <div class="container">
+                  <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </a>
+                  <a class="brand" href="#">{{_i}}Title{{/i}}</a>
+                  <div class="nav-collapse collapse navbar-inverse-collapse">
+                    <ul class="nav">
+                      <li class="active"><a href="#">{{_i}}Home{{/i}}</a></li>
+                      <li><a href="#">{{_i}}Link{{/i}}</a></li>
+                      <li><a href="#">{{_i}}Link{{/i}}</a></li>
+                    </ul>
+                    <ul class="nav pull-right">
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle btn" data-toggle="dropdown">
+                           8
+                           <!--<b class="caret"></b>-->
+                        </a>
+                         <ul class="dropdown-menu notifications">
+                            <li>
+                               <span class="title">Notification title</span>
+                               <div class="media">
+                                  <a class="pull-left" href="#">
+                                     <img class="media-object" data-src="holder.js/48x48/#fff:#444">
+                                  </a>
+                                  <div class="media-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                                  </div>
+                               </div>
+                            </li>
+                            <li>
+                               <span class="title"><strong>Notification</strong> title</span>
+                            </li>
+                         </ul>
+                      </li>
+                    </ul>
+                  </div><!-- /.nav-collapse -->
+                </div>
+              </div><!-- /navbar-inner -->
+            </div><!-- /navbar -->
+          </div>{{! /example }}
+<pre class="prettyprint linenums">
+&lt;div class="navbar navbar-inverse"&gt;
+  ...
+&lt;/div&gt;
+</pre>
+         </section>
 
 
       </div>{{! /span9 }}
