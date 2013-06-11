@@ -6008,6 +6008,9 @@ input.search-query {
 .dropdown-menu.notifications {
   width: auto;
   min-width: 320px;
+}
+
+.dropdown-menu.notifications > ul {
   overflow-y: auto;
 }
 
@@ -6015,6 +6018,13 @@ input.search-query {
   padding: 15px;
   background-color: #F0F0F0;
   border-top: 1px solid #d0d0d0;
+}
+
+.dropdown-menu.notifications > li.header {
+  padding: 5px;
+  text-align: right;
+  background-color: #ffffff;
+  border-top: 0;
 }
 
 .dropdown-menu.notifications > li .title {

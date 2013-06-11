@@ -61,12 +61,22 @@
    &.notifications {
       min-width: 320px;
       width: auto;
-      overflow-y: auto;
+
+      > ul {
+         overflow-y: auto;
+      }
 
       > li {
          padding: 15px;
          border-top: 1px solid #d0d0d0;
          background-color: #F0F0F0;
+
+         &.header {
+            padding: 5px;
+            background-color: @white;
+            text-align: right;
+            border-top: 0;
+         }
 
          .title {
             display: block;
