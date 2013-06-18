@@ -116,6 +116,7 @@
           <li><a href="#cards-news"> News Cards</a></li>
           <li><a href="#cards-people"> People Cards</a></li>
           <li><a href="#cards-hovercard"> People Hover Cards</a></li>
+          <li><a href="#navbar-notification"> Navbar Notifications</a></li>
         </ul>
       </div>
       <div class="span9">
@@ -271,7 +272,7 @@
                         </a>
                      </div>
                      <div class="card-info">
-                        <a class="title" href="#">Omer Simpson</a>
+                        <a class="title" href="#">Homer Simpson</a>
                         <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                      </div>
                      <div class="card-bottom">
@@ -321,7 +322,7 @@
       &lt;/a&gt;
    &lt;/div&gt;
    &lt;div class="card-info"&gt;
-      &lt;a class="title" href="#"&gt;Omer Simpson&lt;/a&gt;
+      &lt;a class="title" href="#"&gt;Homer Simpson&lt;/a&gt;
       &lt;div class="desc"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/div&gt;
    &lt;/div&gt;
    &lt;div class="card-bottom"&gt;
@@ -383,6 +384,66 @@
 &lt;/div&gt;
 </pre>
         </section>
+
+
+
+         <section id="navbar-notification">
+          <h2>Navbar Notifications</h2>
+          <p></p>
+          <div class="bs-docs-example" style="background-color: #E5E5E5">
+            <div class="navbar" style="position: static;">
+              <div class="navbar-inner">
+                <div class="container">
+                  <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </a>
+                  <a class="brand" href="#">Title</a>
+                  <div class="nav-collapse collapse navbar-inverse-collapse">
+                    <ul class="nav">
+                      <li class="active"><a href="#">Home</a></li>
+                      <li><a href="#">Link</a></li>
+                      <li><a href="#">Link</a></li>
+                    </ul>
+                    <ul class="nav pull-right">
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle btn" data-toggle="dropdown">
+                           8
+                           <!--<b class="caret"></b>-->
+                        </a>
+                         <div class="dropdown-menu notifications">
+                            <ul>
+                               <li class="header">Notifications</li>
+                               <li>
+                                  <span class="title">Notification title</span>
+                                  <div class="media">
+                                     <a class="pull-left" href="#">
+                                        <img class="media-object" data-src="holder.js/48x48/#fff:#444">
+                                     </a>
+                                     <div class="media-body">
+                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                                     </div>
+                                  </div>
+                               </li>
+                               <li>
+                                  <span class="title"><strong>Notification</strong> title</span>
+                               </li>
+                            </ul>
+                         </div>
+                      </li>
+                    </ul>
+                  </div><!-- /.nav-collapse -->
+                </div>
+              </div><!-- /navbar-inner -->
+            </div><!-- /navbar -->
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="navbar navbar-inverse"&gt;
+  ...
+&lt;/div&gt;
+</pre>
+         </section>
 
 
       </div>

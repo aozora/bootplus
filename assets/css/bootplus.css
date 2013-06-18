@@ -1,5 +1,5 @@
 /*!
- * Bootplus v1.0.2
+ * Bootplus v1.0.3
  *
  * Copyright 2013 Marcello Palmitessa
  * Licensed under the Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0) or the GPL v2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
@@ -5915,6 +5915,8 @@ input.search-query {
 .btn-group > .btn + .dropdown-toggle {
   width: 20px;
   min-width: 20px;
+  padding-right: 2px;
+  padding-left: 2px;
 }
 
 .btn-group > .btn.dropdown-toggle .caret {
@@ -6003,6 +6005,39 @@ input.search-query {
   font-size: 14px;
   font-weight: bold;
   content: "\F106";
+}
+
+.dropdown-menu.notifications {
+  width: auto;
+  min-width: 320px;
+}
+
+.dropdown-menu.notifications > ul {
+  overflow-y: auto;
+}
+
+.dropdown-menu.notifications > li {
+  padding: 15px;
+  background-color: #F0F0F0;
+  border-top: 1px solid #d0d0d0;
+}
+
+.dropdown-menu.notifications > li.header {
+  padding: 5px;
+  text-align: right;
+  background-color: #ffffff;
+  border-top: 0;
+}
+
+.dropdown-menu.notifications > li .title {
+  display: block;
+  height: 17px;
+  margin: 0 0 12px 0;
+  overflow: hidden;
+  font-size: 13px;
+  color: #737373;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .nav-list {
@@ -6288,6 +6323,15 @@ input.search-query {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
      -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav > li > a.btn {
+  padding: 0 8px;
+  margin-top: 13px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 29px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .modal-backdrop {
@@ -6591,6 +6635,8 @@ input.search-query {
 
 .card .card-heading.image img {
   display: inline-block;
+  width: 46px;
+  height: 46px;
   margin-right: 15px;
   vertical-align: top;
   border: 0;
