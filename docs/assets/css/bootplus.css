@@ -5915,6 +5915,8 @@ input.search-query {
 .btn-group > .btn + .dropdown-toggle {
   width: 20px;
   min-width: 20px;
+  padding-right: 2px;
+  padding-left: 2px;
 }
 
 .btn-group > .btn.dropdown-toggle .caret {
@@ -6633,6 +6635,8 @@ input.search-query {
 
 .card .card-heading.image img {
   display: inline-block;
+  width: 46px;
+  height: 46px;
   margin-right: 15px;
   vertical-align: top;
   border: 0;
