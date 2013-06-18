@@ -1,3 +1,8 @@
+## v1.0.3
+- Fix issue #9
+- Upgraded Font-Awesome to v3.2.1
+- Upgraded Recess to v1.1.8
+
 ## v1.0.2
 - fixed Validation states (Forms)
 - Fixed Issue #4 "Button rework .."
