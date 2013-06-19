@@ -37,19 +37,6 @@
                     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
                                    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-      <script type="text/javascript">
-
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-3182578-9']);
-        _gaq.push(['_trackPageview']);
-
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-
-      </script>
   </head>
 
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -391,7 +378,8 @@
           <h2>Navbar Notifications</h2>
           <p></p>
           <div class="bs-docs-example" style="background-color: #E5E5E5">
-            <div class="navbar" style="position: static;">
+
+            <div class="navbar">
               <div class="navbar-inner">
                 <div class="container">
                   <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-inverse-collapse">
@@ -407,30 +395,30 @@
                       <li><a href="#">Link</a></li>
                     </ul>
                     <ul class="nav pull-right">
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle btn" data-toggle="dropdown">
-                           8
-                           <!--<b class="caret"></b>-->
-                        </a>
-                         <div class="dropdown-menu notifications">
-                            <ul>
-                               <li class="header">Notifications</li>
-                               <li>
-                                  <span class="title">Notification title</span>
-                                  <div class="media">
-                                     <a class="pull-left" href="#">
-                                        <img class="media-object" data-src="holder.js/48x48/#fff:#444">
-                                     </a>
-                                     <div class="media-body">
-                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                      <li class="dropdown dropdown-notification">
+                            <a href="#" class="dropdown-toggle btn-notification" data-toggle="dropdown">
+                               8
+                               <!--<b class="caret"></b>-->
+                            </a>
+                            <!--<div class="dropdown-menu notifications">-->
+                               <ul class="dropdown-menu notifications">
+                                  <li class="header">Notifications</li>
+                                  <li>
+                                     <span class="title">Notification title</span>
+                                     <div class="media">
+                                        <a class="pull-left" href="#">
+                                           <img class="media-object" data-src="holder.js/48x48/#fff:#444">
+                                        </a>
+                                        <div class="media-body">
+                                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                                        </div>
                                      </div>
-                                  </div>
-                               </li>
-                               <li>
-                                  <span class="title"><strong>Notification</strong> title</span>
-                               </li>
-                            </ul>
-                         </div>
+                                  </li>
+                                  <li>
+                                     <span class="title"><strong>Notification</strong> title</span>
+                                  </li>
+                               </ul>
+                            <!--</div>-->
                       </li>
                     </ul>
                   </div><!-- /.nav-collapse -->
@@ -491,21 +479,6 @@
     <script src="assets/js/application.js"></script>
 
 
-    <!-- Analytics
-    ================================================== -->
-    <script>
-      var _gauges = _gauges || [];
-      (function() {
-        var t   = document.createElement('script');
-        t.type  = 'text/javascript';
-        t.async = true;
-        t.id    = 'gauges-tracker';
-        t.setAttribute('data-site-id', '4f0dc9fef5a1f55508000013');
-        t.src = '//secure.gaug.es/track.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(t, s);
-      })();
-    </script>
 
   </body>
 </html>

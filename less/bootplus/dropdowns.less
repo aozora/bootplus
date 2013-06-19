@@ -56,9 +56,36 @@
 }
 
 
+// Dropdown Notifications
+// ----------------------
+.dropdown-notification {
+   padding: 10px 0;
+}
+
+.navbar .nav > li > a.dropdown-toggle.btn-notification {
+   padding: 0;
+   color: @grayDark;
+   font-weight: bold;
+   font-size: @baseFontSize;
+   text-align: center;
+   vertical-align: middle;
+   cursor: pointer;
+   .buttonBackground(@btnBackground, @btnBackgroundHighlight, @grayDark, none);
+   border: 1px solid @btnBorder;
+   *border: 0; // Remove the border to prevent IE7's black border on input:focus
+   .border-radius(@baseBorderRadius);
+
+   width: 29px;
+   height: 27px;
+   min-height: 27px;
+   line-height: 27px;
+   .ie7-restore-left-whitespace(); // Give IE7 some love
+   .box-shadow(none);
+}
+
 
 .dropdown-menu {
-   &.notifications {
+   &.dropdown-notifications {
       min-width: 320px;
       width: auto;
 

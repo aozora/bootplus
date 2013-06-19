@@ -295,7 +295,8 @@
           <h2>{{_i}}Navbar Notifications{{/i}}</h2>
           <p>{{_i}}{{/i}}</p>
           <div class="bs-docs-example" style="background-color: #E5E5E5">
-            <div class="navbar" style="position: static;">
+
+            <div class="navbar">
               <div class="navbar-inner">
                 <div class="container">
                   <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-inverse-collapse">
@@ -311,30 +312,29 @@
                       <li><a href="#">{{_i}}Link{{/i}}</a></li>
                     </ul>
                     <ul class="nav pull-right">
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle btn" data-toggle="dropdown">
-                           8
-                           <!--<b class="caret"></b>-->
-                        </a>
-                         <div class="dropdown-menu notifications">
-                            <ul>
-                               <li class="header">Notifications</li>
-                               <li>
-                                  <span class="title">Notification title</span>
-                                  <div class="media">
-                                     <a class="pull-left" href="#">
-                                        <img class="media-object" data-src="holder.js/48x48/#fff:#444">
-                                     </a>
-                                     <div class="media-body">
-                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                      <li class="dropdown dropdown-notification">
+                            <a href="#" class="dropdown-toggle btn-notification" data-toggle="dropdown">
+                               8
+                            </a>
+                            <!--<div class="dropdown-menu dropdown-notifications">-->
+                               <ul class="dropdown-menu dropdown-notifications">
+                                  <li class="header">Notifications</li>
+                                  <li>
+                                     <span class="title">Notification title</span>
+                                     <div class="media">
+                                        <a class="pull-left" href="#">
+                                           <img class="media-object" data-src="holder.js/48x48/#fff:#444">
+                                        </a>
+                                        <div class="media-body">
+                                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                                        </div>
                                      </div>
-                                  </div>
-                               </li>
-                               <li>
-                                  <span class="title"><strong>Notification</strong> title</span>
-                               </li>
-                            </ul>
-                         </div>
+                                  </li>
+                                  <li>
+                                     <span class="title"><strong>Notification</strong> title</span>
+                                  </li>
+                               </ul>
+                            <!--</div>-->
                       </li>
                     </ul>
                   </div><!-- /.nav-collapse -->

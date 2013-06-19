@@ -6007,6 +6007,65 @@ input.search-query {
   content: "\F106";
 }
 
+.dropdown-notification {
+  padding: 10px 0;
+}
+
+.navbar .nav > li > a.dropdown-toggle.btn-notification {
+  height: 27px;
+  min-height: 27px;
+  padding: 0;
+  *margin-left: .3em;
+  font-size: 13px;
+  font-weight: bold;
+  color: #444444;
+  text-align: center;
+  text-shadow: none;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  *background-color: #f1f1f1;
+  background-image: -moz-linear-gradient(top, #ffffff, #f1f1f1);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f1f1f1));
+  background-image: -webkit-linear-gradient(top, #ffffff, #f1f1f1);
+  background-image: -o-linear-gradient(top, #ffffff, #f1f1f1);
+  background-image: linear-gradient(to bottom, #ffffff, #f1f1f1);
+  background-repeat: repeat-x;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  *border: 0;
+  border-color: #f1f1f1 #f1f1f1 #cbcbcb;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-color: rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff1f1f1', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar .nav > li > a.dropdown-toggle.btn-notification:hover,
+.navbar .nav > li > a.dropdown-toggle.btn-notification:focus,
+.navbar .nav > li > a.dropdown-toggle.btn-notification:active,
+.navbar .nav > li > a.dropdown-toggle.btn-notification.active,
+.navbar .nav > li > a.dropdown-toggle.btn-notification.disabled,
+.navbar .nav > li > a.dropdown-toggle.btn-notification[disabled] {
+  color: #444444;
+  background-color: #f1f1f1;
+  *background-color: #e4e4e4;
+}
+
+.navbar .nav > li > a.dropdown-toggle.btn-notification:active,
+.navbar .nav > li > a.dropdown-toggle.btn-notification.active {
+  background-color: #d8d8d8 \9;
+}
+
+.navbar .nav > li > a.dropdown-toggle.btn-notification:first-child {
+  *margin-left: 0;
+}
+
 .dropdown-menu.notifications {
   width: auto;
   min-width: 320px;
