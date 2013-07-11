@@ -94,7 +94,8 @@ bootplus/css/*.css: less/*.less
 	./node_modules/.bin/recess --compress ${BOOTPLUS_LESS} > bootplus/css/bootplus.min.css
 	./node_modules/.bin/recess --compile ${BOOTPLUS_RESPONSIVE_LESS} > bootplus/css/bootplus-responsive.css
 	./node_modules/.bin/recess --compress ${BOOTPLUS_RESPONSIVE_LESS} > bootplus/css/bootplus-responsive.min.css
-	cp docs/assets/css/font-awesome*.* bootplus/css/
+	mkdir -p bootplus/font
+	cp -R docs/assets/font/*.* bootplus/font
 
 #
 # IMAGES
