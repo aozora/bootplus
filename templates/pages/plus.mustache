@@ -1,105 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <title>Plus · Bootplus</title>
-      <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-      <meta name="description" content="Bootplus : Sleek, intuitive, and powerful Google styled front-end framework for faster and easier web development" />
-      <meta name="keywords" content="bootplus, google plus, google+, plus, bootstrap, framework, web framework, css3, html5" />
-      <meta name="author" content="AozoraLabs by Marcello Palmitessa"/>
-      <link rel="publisher" href="https://plus.google.com/117689250782136016574">
-
-      <!-- Le styles -->
-      <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
-      <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-      <!--[if IE 7]>
-      <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
-      <![endif]-->
-
-      <link href="assets/css/bootplus.css" rel="stylesheet">
-      <link href="assets/css/bootplus-responsive.css" rel="stylesheet">
-
-      <link href="assets/css/docs.css" rel="stylesheet">
-      <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
-
-      <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-      <!--[if lt IE 9]>
-        <script src="assets/js/html5shiv.js"></script>
-      <![endif]-->
-
-      <!-- Le fav and touch icons -->
-      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
-
-      <script type="text/javascript">
-
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-3182578-9']);
-        _gaq.push(['_trackPageview']);
-
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-
-      </script>
-  </head>
-
-<body data-spy="scroll" data-target=".bs-docs-sidebar">
-
-    <!-- Navbar
-    ================================================== -->
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="./index.html">Bootplus</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="">
-                <a href="./index.html">Home</a>
-              </li>
-              <li class="">
-                <a href="./getting-started.html">Get started</a>
-              </li>
-              <li class="">
-                <a href="./scaffolding.html">Scaffolding</a>
-              </li>
-              <li class="">
-                <a href="./base-css.html">Base CSS</a>
-              </li>
-              <li class="">
-                <a href="./components.html">Components</a>
-              </li>
-              <li class="">
-                <a href="./plus.html">Plus</a>
-              </li>
-              <li class="">
-                <a href="./javascript.html">JavaScript</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
 <!-- Subhead
 ================================================== -->
 <header class="jumbotron subhead" id="overview">
   <div class="container">
-    <h1>Plus Components</h1>
-    <p class="lead">Various components like the ones used by Google+.</p>
+    <h1>{{_i}}Plus Components{{/i}}</h1>
+    <p class="lead">{{_i}}Various components like the ones used by Google+.{{/i}}</p>
   </div>
 </header>
 
@@ -113,10 +17,10 @@
     <div class="row">
       <div class="span3 bs-docs-sidebar">
         <ul class="nav nav-list bs-docs-sidenav">
-          <li><a href="#cards-news"> News Cards</a></li>
-          <li><a href="#cards-people"> People Cards</a></li>
-          <li><a href="#cards-hovercard"> People Hover Cards</a></li>
-          <li><a href="#navbar-notification"> Navbar Notifications</a></li>
+          <li><a href="#cards-news"> {{_i}}News Cards{{/i}}</a></li>
+          <li><a href="#cards-people"> {{_i}}People Cards{{/i}}</a></li>
+          <li><a href="#cards-hovercard"> {{_i}}People Hover Cards{{/i}}</a></li>
+          <li><a href="#navbar-notification"> {{_i}}Navbar Notifications{{/i}}</a></li>
         </ul>
       </div>
       <div class="span9">
@@ -127,12 +31,12 @@
         ================================================== -->
         <section id="cards-news">
           <div class="page-header">
-            <h1>News Cards</h1>
-             <p>Use the News Cards to show informative text, news, media or other content; optionally you can add a collapsible section to display user comments.</p>
-             <p>News Cards have no fixed width, so it is best to include them under a span column or a fixed-width container element.</p>
+            <h1>{{_i}}News Cards{{/i}}</h1>
+             <p>{{_i}}Use the News Cards to show informative text, news, media or other content; optionally you can add a collapsible section to display user comments.{{/i}}</p>
+             <p>{{_i}}News Cards have no fixed width, so it is best to include them under a span column or a fixed-width container element.{{/i}}</p>
           </div>
 
-          <h2>Example</h2>
+          <h2>{{_i}}Example{{/i}}</h2>
           <div class="bs-docs-example" style="background-color: #E5E5E5;">
             
             <div class="row">
@@ -197,7 +101,7 @@
 
 
 
-          </div>
+          </div>{{! /example }}
 <pre class="prettyprint linenums">
 &lt;div class="card"&gt;
    &lt;h3 class="card-heading simple"&gt;Simple News Card&lt;/h3&gt;
@@ -258,11 +162,11 @@
         ================================================== -->
         <section id="cards-people">
           <div class="page-header">
-            <h1>People Cards</h1>
-             <p>People Cards are used to display user informations, within avatar and an image thumbnail.</p>
+            <h1>{{_i}}People Cards{{/i}}</h1>
+             <p>{{_i}}People Cards are used to display user informations, within avatar and an image thumbnail.{{/i}}</p>
           </div>
 
-          <h2>Example</h2>
+          <h2>{{_i}}Example{{/i}}</h2>
           <div class="bs-docs-example" style="background-color: #E5E5E5;">
 
                   <div class="card people">
@@ -313,7 +217,7 @@
                   </div>
 
 
-          </div>
+          </div>{{! /example }}
 <pre class="prettyprint linenums">
 &lt;div class="card people"&gt;
    &lt;div class="card-top green"&gt;
@@ -338,11 +242,11 @@
         ================================================== -->
         <section id="cards-hovercard">
           <div class="page-header">
-            <h1>People Hover Cards</h1>
-             <p>Also this cards display user infos, but usually are displayed by hovering an element in the page.</p>
+            <h1>{{_i}}People Hover Cards{{/i}}</h1>
+             <p>{{_i}}Also this cards display user infos, but usually are displayed by hovering an element in the page.{{/i}}</p>
           </div>
 
-          <h2>Example</h2>
+          <h2>{{_i}}Example{{/i}}</h2>
           <div class="bs-docs-example" style="background-color: #E5E5E5;">
 
             <div class="card hovercard">
@@ -363,7 +267,7 @@
                </div>
             </div>
 
-          </div>
+          </div>{{! /example }}
 <pre class="prettyprint linenums">
 &lt;div class="card hovercard"&gt;
    &lt;img src="assets/img/the-simpsons.png" alt=""/&gt;
@@ -388,8 +292,8 @@
 
 
          <section id="navbar-notification">
-          <h2>Navbar Notifications</h2>
-          <p></p>
+          <h2>{{_i}}Navbar Notifications{{/i}}</h2>
+          <p>{{_i}}{{/i}}</p>
           <div class="bs-docs-example" style="background-color: #E5E5E5">
 
             <div class="navbar">
@@ -400,12 +304,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </a>
-                  <a class="brand" href="#">Title</a>
+                  <a class="brand" href="#">{{_i}}Title{{/i}}</a>
                   <div class="nav-collapse collapse navbar-inverse-collapse">
                     <ul class="nav">
-                      <li class="active"><a href="#">Home</a></li>
-                      <li><a href="#">Link</a></li>
-                      <li><a href="#">Link</a></li>
+                      <li class="active"><a href="#">{{_i}}Home{{/i}}</a></li>
+                      <li><a href="#">{{_i}}Link{{/i}}</a></li>
+                      <li><a href="#">{{_i}}Link{{/i}}</a></li>
                     </ul>
                     <ul class="nav pull-right">
                       <li class="dropdown dropdown-notification">
@@ -437,7 +341,7 @@
                 </div>
               </div><!-- /navbar-inner -->
             </div><!-- /navbar -->
-          </div>
+          </div>{{! /example }}
 <pre class="prettyprint linenums">
 &lt;div class="navbar navbar-inverse"&gt;
   ...
@@ -446,66 +350,8 @@
          </section>
 
 
-      </div>
-    </div>
-  </div>
+      </div>{{! /span9 }}
+    </div>{{! row}}
+  </div>{{! /.container }}
 
 
-
-
-
-    <!-- Footer
-    ================================================== -->
-    <footer class="footer">
-      <div class="container">
-        <p>Designed and built by <a href="http://twitter.com/aozoralabs">Marcello Palmitessa</a>, based on the great Twitter Bootstrap made by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
-        <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a> or the <a href="http://www.gnu.org/licenses/gpl-2.0.html">GPL v2</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-        <p><a href="http://fontawesome.io">Font Awesome</a> font licensed under <a href="http://scripts.sil.org/OFL">SIL Open Font License v1.1</a>, CSS and LESS under <a href="http://opensource.org/licenses/mit-license.html">MIT License</a>.</p>
-      </div>
-    </footer>
-
-
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap-transition.js"></script>
-    <script src="assets/js/bootstrap-alert.js"></script>
-    <script src="assets/js/bootstrap-modal.js"></script>
-    <script src="assets/js/bootstrap-dropdown.js"></script>
-    <script src="assets/js/bootstrap-scrollspy.js"></script>
-    <script src="assets/js/bootstrap-tab.js"></script>
-    <script src="assets/js/bootstrap-tooltip.js"></script>
-    <script src="assets/js/bootstrap-popover.js"></script>
-    <script src="assets/js/bootstrap-button.js"></script>
-    <script src="assets/js/bootstrap-collapse.js"></script>
-    <script src="assets/js/bootstrap-carousel.js"></script>
-    <script src="assets/js/bootstrap-typeahead.js"></script>
-    <script src="assets/js/bootstrap-affix.js"></script>
-
-    <script src="assets/js/holder/holder.js"></script>
-    <script src="assets/js/google-code-prettify/prettify.js"></script>
-
-    <script src="assets/js/application.js"></script>
-
-
-    <!-- Analytics
-    ================================================== -->
-    <script>
-      var _gauges = _gauges || [];
-      (function() {
-        var t   = document.createElement('script');
-        t.type  = 'text/javascript';
-        t.async = true;
-        t.id    = 'gauges-tracker';
-        t.setAttribute('data-site-id', '4f0dc9fef5a1f55508000013');
-        t.src = '//secure.gaug.es/track.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(t, s);
-      })();
-    </script>
-
-  </body>
-</html>
