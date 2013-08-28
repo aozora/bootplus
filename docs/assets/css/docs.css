@@ -815,7 +815,7 @@ form.bs-docs-example {
    display: block;
    margin: 0;
    padding: 12px 0 0 20px;
-   height: 32px;
+   min-height: 32px;
    /*overflow: hidden;
    font-size: 14px;
    text-overflow: ellipsis;*/
@@ -887,6 +887,14 @@ separator
     width: 230px \9; /* Override the previous IE8-9 hack */
   }
 }
+@media (min-width: 980px) and (max-width: 1199px) {
+   .bs-docs-sidenav {
+      width: 210px;
+   }
+   .bs-docs-sidenav > li > a {
+      width: 180 \9; /* Override the previous IE8-9 hack */
+   }
+}
 
 /* Desktop
 ------------------------- */
@@ -927,8 +935,8 @@ separator
   }
   /* Adjust sidenav width */
   .bs-docs-sidenav {
-    width: 166px;
-    margin-top: 20px;
+    width: 156px;
+    /*margin-top: 20px;*/
   }
   .bs-docs-sidenav.affix {
     top: 0;

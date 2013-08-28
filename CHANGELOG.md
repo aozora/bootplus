@@ -1,3 +1,6 @@
+## v1.0.4
+- Fix issue
+
 ## v1.0.3
 - Fix issue #9
 - Upgraded Font-Awesome to v3.2.1
