@@ -1,5 +1,8 @@
 ## v1.0.4
-- Fix issue
+- Fix issue 10
+- Fix issue 16
+- Fix issue 22
+
 
 ## v1.0.3
 - Fix issue #9
