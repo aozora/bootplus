@@ -1,5 +1,5 @@
 /*!
- * Bootplus v1.0.3
+ * Bootplus v1.0.4
  *
  * Copyright 2013 Marcello Palmitessa
  * Licensed under the Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0) or the GPL v2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
@@ -2283,10 +2283,13 @@ table th[class*="span"],
 /* keeps Bootstrap styles with and without icons the same */
 
 .btn [class^="icon-"],
-.nav [class^="icon-"],
-.btn [class*=" icon-"],
-.nav [class*=" icon-"] {
+.btn [class*=" icon-"] {
   line-height: 29px;
+}
+
+.nav [class^="icon-"],
+.nav [class*=" icon-"] {
+  line-height: 20px;
 }
 
 .btn.btn-mini [class^="icon-"],
@@ -5928,6 +5931,12 @@ input.search-query {
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
+}
+
+.alert > a,
+.alert.alert-block > a {
+  color: #FFFFFF;
+  text-decoration: underline;
 }
 
 .well {
