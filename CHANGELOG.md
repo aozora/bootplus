@@ -1,7 +1,8 @@
 ## v1.0.4
-- Fix issue 10
-- Fix issue 16
-- Fix issue 22
+- Fix issue 10 Alert info links style
+- Fix issue 11 Emphasis classes are all white
+- Fix issue 13 Menu Card on Left SideBar
+- Fix issue 22 Fix responsive
 
 
 ## v1.0.3
