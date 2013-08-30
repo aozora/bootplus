@@ -2778,6 +2778,10 @@ a.btn-large {
           border-radius: 3px;
 }
 
+a.btn-mini {
+  line-height: 20px;
+}
+
 .btn-block {
   display: block;
   width: 100%;
