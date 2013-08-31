@@ -3,7 +3,6 @@
 - Fixed Issue #24 Checkbox and radio button toggles not obvious
 - Fixed issue #23 Striped progress bars not repeated
 - Fixed issue #19 Different height between button
-- Fixed issue
 
 
 ## v1.0.4
