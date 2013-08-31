@@ -1,3 +1,11 @@
+## v1.0.5
+- Fix issue
+- Fix issue
+- Fix issue
+- Fix issue
+- Fix issue
+
+
 ## v1.0.4
 - Fix issue 10 Alert info links style
 - Fix issue 11 Emphasis classes are all white
