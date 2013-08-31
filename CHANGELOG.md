@@ -2,7 +2,7 @@
 - Fixed Issue #25 Mini button with icon alignment issue
 - Fixed Issue #24 Checkbox and radio button toggles not obvious
 - Fixed issue #23 Striped progress bars not repeated
-- Fixed issue
+- Fixed issue #19 Different height between button
 - Fixed issue
 
 

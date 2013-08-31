@@ -2727,7 +2727,9 @@ button.close {
 }
 
 a.btn {
-  line-height: 29px;
+  height: 27px;
+  min-height: 27px;
+  line-height: 27px;
 }
 
 .btn-large {
