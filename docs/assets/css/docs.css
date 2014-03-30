@@ -85,7 +85,7 @@ body {
   display: block;
   font-weight: 500;
   color: #fff;
-  background-color: #563d7c;
+  /*background-color: #563d7c;*/
   border-radius: 15%;
   cursor: default;
   text-align: center;
@@ -229,14 +229,14 @@ body {
 .bs-docs-header {
   position: relative;
   padding: 30px 15px;
-  color: #cdbfe3;
+  /*color: #cdbfe3;*/
   text-align: center;
   text-shadow: 0 1px 0 rgba(0,0,0,.1);
-  background-color: #6f5499;
-  background-image: -webkit-linear-gradient(top, #563d7c 0%, #6f5499 100%);
-  background-image: linear-gradient(to bottom, #563d7c 0%, #6f5499 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);
+  /*background-color: #6f5499;*/
+  /*background-image: -webkit-linear-gradient(top, #563d7c 0%, #6f5499 100%);*/
+  /*background-image: linear-gradient(to bottom, #563d7c 0%, #6f5499 100%);*/
+  /*background-repeat: repeat-x;*/
+  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);*/
 }
 
  /* Masthead (headings and download button) */
@@ -251,7 +251,7 @@ body {
 .bs-docs-masthead .lead {
   margin: 0 auto 30px;
   font-size: 20px;
-  color: #fff;
+  /*color: #fff;*/
 }
 .bs-docs-masthead .version {
   margin-top: -15px;

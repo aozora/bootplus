@@ -166,18 +166,6 @@ module.exports = function (grunt) {
           'dist/css/<%= pkg.name %>.css': 'less/bootplus/bootplus.less'
         }
       },
-      compileTheme: {
-        options: {
-          strictMath: true,
-          sourceMap: true,
-          outputSourceFiles: true,
-          sourceMapURL: '<%= pkg.name %>-theme.css.map',
-          sourceMapFilename: 'dist/css/<%= pkg.name %>-theme.css.map'
-        },
-        files: {
-          'dist/css/<%= pkg.name %>-theme.css': 'less/theme.less'
-        }
-      },
       minify: {
         options: {
           cleancss: true,
@@ -277,24 +265,6 @@ module.exports = function (grunt) {
 
     jekyll: {
       docs: {}
-    },
-
-    jade: {
-      compile: {
-        options: {
-          pretty: true,
-          data: function () {
-            var filePath = path.join(__dirname, 'less/variables.less');
-            var fileContent = fs.readFileSync(filePath, {encoding: 'utf8'});
-            var parser = new BsLessdocParser(fileContent);
-            return {sections: parser.parseFile()};
-          }
-        },
-        files: {
-          'docs/_includes/customizer-variables.html': 'docs/jade/customizer-variables.jade',
-          'docs/_includes/nav-customize.html': 'docs/jade/customizer-nav.jade'
-        }
-      }
     },
 
     validation: {
