@@ -304,7 +304,7 @@ body {
 }
 .bs-docs-header h1 {
   margin-top: 0;
-  color: #fff;
+  /*color: #fff;*/
 }
 .bs-docs-header p {
   margin-bottom: 0;
@@ -533,6 +533,10 @@ body {
   margin-bottom: 20px;
 }
 
+.bs-docs-sidenav .nav > li {
+   background-color: #FFF;
+}
+
 /* All levels of nav */
 .bs-docs-sidebar .nav > li > a {
   display: block;
@@ -643,7 +647,19 @@ body {
 
 /* Space things out */
 .bs-docs-section {
-  margin-bottom: 60px;
+   margin-bottom: 60px;
+   padding: 19px;
+   border: 1px solid #d8d8d8;
+   background-color: #ffffff;
+   border-top-width: 0;
+   border-bottom-width: 2px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+   -webkit-box-shadow: none;
+   -moz-box-shadow: none;
+   box-shadow: none;
+
 }
 .bs-docs-section:last-child {
   margin-bottom: 0;
