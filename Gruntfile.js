@@ -1,8 +1,8 @@
 /*!
- * Bootstrap's Gruntfile
- * http://getbootstrap.com
- * Copyright 2013-2014 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Bootplus's Gruntfile
+ * http://aozora.github.io/bootplus/
+ * Copyright 2013-2014 Marcello Palmitessa @aozoralabs
+ * https://github.com/aozora/bootplus/blob/master/LICENSE
  */
 
 module.exports = function (grunt) {
@@ -28,9 +28,10 @@ module.exports = function (grunt) {
     // Metadata.
     pkg: grunt.file.readJSON('package.json'),
     banner: '/*!\n' +
-            ' * Bootstrap v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
-            ' * Copyright 2011-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
-            ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
+            ' * Bootplus v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
+            ' * Copyright 2013-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
+            ' * Licensed under <%= pkg.licenses[0].type %> (<%= pkg.licenses[0].url %>)\n' +
+            ' *            and <%= pkg.licenses[1].type %> (<%= pkg.licenses[1].url %>)\n' +
             ' */\n',
     jqueryCheck: 'if (typeof jQuery === \'undefined\') { throw new Error(\'Bootstrap\\\'s JavaScript requires jQuery\') }\n\n',
 
@@ -110,7 +111,7 @@ module.exports = function (grunt) {
           'js/tab.js',
           'js/affix.js'
         ],
-        dest: 'dist/js/<%= pkg.name %>.js'
+        dest: 'dist/js/bootstrap.js'
       }
     },
 
@@ -123,7 +124,7 @@ module.exports = function (grunt) {
           banner: '<%= banner %>'
         },
         src: '<%= concat.bootstrap.dest %>',
-        dest: 'dist/js/<%= pkg.name %>.min.js'
+        dest: 'dist/js/bootstrap.min.js'
       },
       customize: {
         options: {
@@ -162,7 +163,7 @@ module.exports = function (grunt) {
           sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
         },
         files: {
-          'dist/css/<%= pkg.name %>.css': 'less/bootstrap.less'
+          'dist/css/<%= pkg.name %>.css': 'less/bootplus/bootplus.less'
         }
       },
       compileTheme: {

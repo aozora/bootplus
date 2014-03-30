@@ -19,19 +19,12 @@ exclude:
   - "vendor"
 
 # Custom vars
-current_version:  3.1.1
-repo:             https://github.com/twbs/bootstrap
-sass_repo:        https://github.com/twbs/bootstrap-sass
+current_version:  2.0.0
+repo:             https://github.com/aozora/bootplus
 
 download:
-  source:         https://github.com/twbs/bootstrap/archive/v3.1.1.zip
-  dist:           https://github.com/twbs/bootstrap/releases/download/v3.1.1/bootstrap-3.1.1-dist.zip
-  sass:           https://github.com/twbs/bootstrap-sass/archive/v3.1.1.tar.gz
+  source:         https://github.com/aozora/bootplus/archive/v2.0.0.zip
+  dist:           https://github.com/aozora/bootplus/releases/download/v2.0.0/bootplus-2.0.0-dist.zip
 
-blog:             http://blog.getbootstrap.com
-expo:             http://expo.getbootstrap.com
+blog:             http://aozora.github.com/bootplus/
 
-cdn:
-  css:            //netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css
-  css_theme:      //netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css
-  js:             //netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js
