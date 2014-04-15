@@ -533,7 +533,7 @@ body {
   margin-bottom: 20px;
 }
 
-.bs-docs-sidenav .nav > li {
+.bs-docs-sidenav.nav > li {
    background-color: #FFF;
 }
 
