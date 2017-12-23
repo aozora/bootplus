@@ -1,5 +1,7 @@
 # [Bootplus v1.0.5](https://github.io/aozora/bootplus)
 
+> Please pay attention that this project is no longer maintained.
+
 Bootplus is a front-end framework for faster and easier web development inspired by the lates Google+ look & feel, created and maintained by [Aozora](http://twitter.com/aozoralabs).
 
 Bootplus is based on [Twitter Bootstrap](http://twitter.github.io/bootstrap)
